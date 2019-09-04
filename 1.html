@@ -1,7 +1,7 @@
 <DOCTYPE html>
 <html>
 <head>
-	<title>ticketbooth</title>
+  <title>ticketbooth</title>
 </head>
 <meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Noto+Sans+KR:400,500,700&display=swap" rel="stylesheet">
@@ -229,19 +229,17 @@ left:20%;">
     <div class="eng700 slidenumber cursorclick">2</div>
     <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>
   </a>
-
   <a class="nature slidecontent" href="index.html">
     <img class="slidecontentimg cursorclick"src="./map/3.gif" style="width:130%; left:-10%; bottom:-4%;">
     <div class="eng700 slidenumber cursorclick">3</div>
     <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>
   </a>
 
-  <a class="nature slidecontent" href="">
+  <a class="nature slidecontent" href="./4.html">
     <img class="slidecontentimg cursorclick"src="./map/4.gif" style="width:74%; left:14%; bottom:0%;">
     <div class="eng700 slidenumber cursorclick">4</div>
     <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>        
   </a>
-
   <a class="nature slidecontent" href="">
     <img class="slidecontentimg cursorclick"src="./map/5.gif" style="width:13%; left:44%; bottom:-0.5%;">
     <div class="eng700 slidenumber cursorclick">5</div>
@@ -253,7 +251,6 @@ left:20%;">
     <div class="eng700 slidenumber cursorclick">6</div>
     <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>    
   </a>
-
   <a class="nature slidecontent" href="">
     <img class="slidecontentimg cursorclick"src="./map/7.gif" style="width:90%; left:5%; bottom:0%;">
     <div class="eng700 slidenumber cursorclick">7</div>
@@ -325,7 +322,7 @@ left:20%;">
   <p class="eng700"> < </p> 
 </div>
 
-<div class="prevbtn" id="prevbtn2" onclick="goBack()"> 
+<div class="prevbtn" id="prevbtn2" onclick="goBack2()"> 
   <p class="eng700"> > </p> 
 </div>
 
@@ -334,25 +331,18 @@ left:20%;">
 </body>
 
 <script type="text/javascript">
-
-
   myShow = w3.slideshow(".nature", 0);
-
   textcolor2.onclick=function(){
     textcolor.style.background="white";
     textcolor2.style.background="blue";
     intro.style.color="#ff5c77";
   }
-
   textcolor.onclick=function(){
     textcolor2.style.background="white";
     textcolor.style.background="blue";
     intro.style.color="black";
   }
-
-
-
-	menucircle.onmouseover=function(){
+  menucircle.onmouseover=function(){
      dropdowncontent.style.visibility = "visible";
      dropdowncontent.style.height = "400px";
      dropdowncontent.style.transition="all 0.2s";
@@ -360,7 +350,6 @@ left:20%;">
      menucircle.style.borderRadius="0%";
      menubox.style.height="460px";
    }
-
   menubox.onmouseout=function(){
     dropdowncontent.style.visibility = "hidden";
     dropdowncontent.style.height = "0px";
@@ -369,17 +358,14 @@ left:20%;">
     menubox.style.transition="all 0.2s";
     menubox.style.height="50px";
 }
-
   dropdowncontent.onmouseover=function(){
     dropdowncontent.style.visibility="visible";
     dropdowncontent.style.height="400px"
     menucircle.style.borderRadius="0%";
     menubox.style.height="460px";
   }
-
   function goBack() { window.history.back() }
   function goBack2() { window.history.forward() }
-
   var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -389,24 +375,18 @@ left:20%;">
         this.tick();
         this.isDeleting = false;
     };
-
     TxtType.prototype.tick = function() {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
-
         if (this.isDeleting) {
         this.txt = fullTxt.substring(0, this.txt.length - 1);
         } else {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
-
         this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
         var that = this;
         var delta = 150 - Math.random() * 100;
-
         if (this.isDeleting) { delta /= 2; }
-
         if (!this.isDeleting && this.txt === fullTxt) {
         delta = this.period;
         this.isDeleting = true;
@@ -415,12 +395,10 @@ left:20%;">
         this.loopNum++;
         delta = 500;
         }
-
         setTimeout(function() {
         that.tick();
         }, delta);
     };
-
     window.onload = function() {
         var elements = document.getElementsByClassName('typewrite');
         for (var i=0; i<elements.length; i++) {
@@ -430,14 +408,11 @@ left:20%;">
               new TxtType(elements[i], JSON.parse(toRotate), period);
             }
         }
-
         var css = document.createElement("style");
         css.type = "text/css";
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid blue}";
         document.body.appendChild(css);
     };
-
-
     x1.onclick=function(){
       window1.style.visibility="hidden"
       line1.style.visibility="hidden"
@@ -447,15 +422,12 @@ left:20%;">
       textcolor.style.visibility="hidden"
       textcolor2.style.visibility="hidden"
     }
-
     x2.onclick=function(){
       ticketbooth.style.visibility="hidden"
     }
-
     x4.onclick=function(){
       title1box.style.visibility="hidden"
     }
-
     x3.onclick=function(){
       window2.style.visibility="hidden"
       line2.style.visibility="hidden"
@@ -467,7 +439,6 @@ left:20%;">
       spot3.style.visibility="hidden"
       spot4.style.visibility="hidden"
     }
-
     x5.onclick=function(){
       window3.style.visibility="hidden";
       line3.style.visibility="hidden";
@@ -475,7 +446,6 @@ left:20%;">
       big3.style.visibility="hidden";
       periodani.style.visibility="hidden";
     }
-
     x6.onclick=function(){
       window4.style.visibility="hidden";
       line4.style.visibility="hidden";
@@ -483,8 +453,6 @@ left:20%;">
       big4.style.visibility="hidden";
       p2.style.visibility="hidden";
     }
-
-
     mini1.onclick=function(){
       window1.style.height="5%"
       big1.style.visibility="visible"
@@ -494,7 +462,6 @@ left:20%;">
       textcolor.style.visibility="hidden"
       textcolor2.style.visibility="hidden"
     }
-
     mini2.onclick=function(){
       window2.style.height="5%"
       big2.style.visibility="visible"
@@ -506,7 +473,6 @@ left:20%;">
       spot3.style.visibility="hidden"
       spot4.style.visibility="hidden"
     }
-
     mini3.onclick=function(){
       window3.style.height="6%"
       big3.style.visibility="visible"
@@ -514,7 +480,6 @@ left:20%;">
       line3.style.visibility="hidden"
       periodani.style.visibility="hidden"
     }
-
     mini4.onclick=function(){
       window4.style.height="6%"
       big4.style.visibility="visible"
@@ -522,8 +487,6 @@ left:20%;">
       line4.style.visibility="hidden"
       p2.style.visibility="hidden"
     }
-
-
     big1.onclick=function(){
       big1.style.visibility="hidden"
       mini1.style.visibility="visible"
@@ -532,9 +495,7 @@ left:20%;">
       intro.style.visibility="visible"
       textcolor.style.visibility="visible"
       textcolor2.style.visibility="visible"
-
     }
-
     big2.onclick=function(){
       big2.style.visibility="hidden"
       mini2.style.visibility="visible"
@@ -546,7 +507,6 @@ left:20%;">
       spot3.style.visibility="visible"
       spot4.style.visibility="visible"
     }
-
     big3.onclick=function(){
       big3.style.visibility="hidden";
       mini3.style.visibility="visible";
@@ -554,7 +514,6 @@ left:20%;">
       line3.style.visibility="visible";
       periodani.style.visibility="visible";
     }
-
     big4.onclick=function(){
       big4.style.visibility="hidden";
       mini4.style.visibility="visible";
@@ -562,8 +521,6 @@ left:20%;">
       line4.style.visibility="visible";
       p2.style.visibility="visible";
     }
-
-
     spot1.onmouseover=function(){
       spot1.style.borderRadius="0%";
       spot1line.style.height="60%";
@@ -572,7 +529,6 @@ left:20%;">
       spot1name.style.transition="all .3s";
       spot1name.style.visibility="visible";
     }
-
     spot1.onmouseout=function(){
       spot1.style.borderRadius="100%"
       spot1line.style.height="0%"
@@ -580,9 +536,6 @@ left:20%;">
       spot1name.style.height="0%"
       spot1name.style.visibility="hidden"
     }
-
-
-
     spot2.onmouseover=function(){
       spot2.style.borderRadius="0%"
       spot2line.style.height="60%"
@@ -591,7 +544,6 @@ left:20%;">
       spot2name.style.transition="all .3s"
       spot2name.style.visibility="visible"
     }
-
     spot2.onmouseout=function(){
       spot2.style.borderRadius="100%"
       spot2line.style.height="0%"
@@ -599,7 +551,6 @@ left:20%;">
       spot2name.style.height="0%"
       spot2name.style.visibility="hidden"
     }
-
     spot3.onmouseover=function(){
       spot3.style.borderRadius="0%"
       spot3line.style.height="60%"
@@ -608,7 +559,6 @@ left:20%;">
       spot3name.style.transition="all .3s"
       spot3name.style.visibility="visible"
     }
-
     spot3.onmouseout=function(){
       spot3.style.borderRadius="100%"
       spot3line.style.height="0%"
@@ -616,7 +566,6 @@ left:20%;">
       spot3name.style.height="0%"
       spot3name.style.visibility="hidden"
     }
-
     spot4.onmouseover=function(){
       spot4.style.borderRadius="0%"
       spot4line.style.height="60%"
@@ -625,7 +574,6 @@ left:20%;">
       spot4name.style.transition="all .3s"
       spot4name.style.visibility="visible"
     }
-
     spot4.onmouseout=function(){
       spot4.style.borderRadius="100%"
       spot4line.style.height="0%"
@@ -642,7 +590,6 @@ left:20%;">
       spot1name.style.transition="all .3s"
       spot1name.style.visibility="visible"
     }
-
     a2.onmouseout=function(){
       spot1.style.borderRadius="100%"
       spot1line.style.height="0%"
@@ -650,7 +597,6 @@ left:20%;">
       spot1name.style.height="0%"
       spot1name.style.visibility="hidden"
     }
-
     a1.onmouseover=function(){
       spot2.style.borderRadius="0%"
       spot2line.style.height="60%"
@@ -659,7 +605,6 @@ left:20%;">
       spot2name.style.transition="all .3s"
       spot2name.style.visibility="visible"
     }
-
     a1.onmouseout=function(){
       spot2.style.borderRadius="100%"
       spot2line.style.height="0%"
@@ -667,7 +612,6 @@ left:20%;">
       spot2name.style.height="0%"
       spot2name.style.visibility="hidden"
     }
-
     a3.onmouseover=function(){
       spot3.style.borderRadius="0%"
       spot3line.style.height="60%"
@@ -676,7 +620,6 @@ left:20%;">
       spot3name.style.transition="all .3s"
       spot3name.style.visibility="visible"
     }
-
     a3.onmouseout=function(){
       spot3.style.borderRadius="100%"
       spot3line.style.height="0%"
@@ -684,7 +627,6 @@ left:20%;">
       spot3name.style.height="0%"
       spot3name.style.visibility="hidden"
     }
-
     a4.onmouseover=function(){
       spot4.style.borderRadius="0%"
       spot4line.style.height="60%"
@@ -693,7 +635,6 @@ left:20%;">
       spot4name.style.transition="all .3s"
       spot4name.style.visibility="visible"
     }
-
     a4.onmouseout=function(){
       spot4.style.borderRadius="100%"
       spot4line.style.height="0%"
@@ -701,15 +642,12 @@ left:20%;">
       spot4name.style.height="0%"
       spot4name.style.visibility="hidden"
     }
-
   
   $('.round').click(function(e) {
     e.preventDefault();
     e.stopPropagation();
     $('.arrow').toggleClass('bounceAlpha');
   });
-
-
 </script>
 
 </html>
