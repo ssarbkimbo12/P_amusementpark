@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>fruitsswing</title>
+  <title>fruitsswing</title>
 </head>
 <!----------------------------------기본세팅------------------------------------->
 <meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Noto+Sans+KR:400,500,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
 <script src="https://www.w3schools.com/lib/w3.js"></script>
-<!--link rel="stylesheet" type="text/css" href="1.css"-->
+<link rel="stylesheet" type="text/css" href="4.css">
 
 <body>
 <!----------------------------------wrap------------------------------------->
@@ -16,74 +17,208 @@
 
 <!----------------------------------container1------------------------------>
 <div id="container1">
-	<img id="title1" src="./4/title.png">	
-	<div id="introbox">
-		<img src="./4/intro.png">
-		<p class="kor400"> 훨훨날아보자훨훨날아보자</p>
-	</div>
-	<img id="swing"src="./map/4.gif">
-	<div id="window1"></div>
+
+  <div id=swing>
+  <img id="swingsticker"src="./4/swingsticker.png">
+  <img id="swingg"src="./map/4.gif">
+  </div>
+
+  <img id="title1" src="./4/title.png"> 
+
+  <div id="introbox">
+    <img src="./4/intro.png">
+    <p class="kor400">이곳은 월경 기간 패션 팁을 알려주는 곳이야. 패션후르츠 스윙에서 추천해주는 옷을 입고 훨훨 날아보자!</p>
+    <div class="cursorclick" id="x2">
+      <img src="./1/x.png">
+    </div>
+  </div>
+
+<div id="window1">
+
+ <svg id="line1">
+   <line x1="0" y1="25%" x2="100%" y2="25%" style="stroke:black;stroke-width:1" />
+ </svg>
+
+  <img class="cursorclick" id="x1" src="./1/x.png">
+  <img class="cursorclick" id="mini1" src="./1/mini.png">
+  <img class="cursorclick" id="big1" src="./1/big.png">
+
+<a class="nature2 slidecontent">
+  <p class="kor400 cursorclick filename1" >1.Unexposed.mp4</p>
+
+  <div id="slidecontent1" style="position:absolute; width: 100%; height: 100%; top:0%;"onclick="location.href='#container2'">
+      <img class="slidecontentimg cursorclick"src="./4/thumbnail.png" style="width:80%; left:-15%; bottom:5%;">
+      <p class="kor400 slidertext2 cursorclick">다들 외출 중에 월경과 관련된 경험이 있어?<br>
+      예상치 못한 경우들 때문에 당황했을 너희들을 위해 유용한 코디 팁을 알려줄까 해.</p>  
+      <div class="kor700 slidertitle2 cursorclick" id="slidertitle1" onclick="location.href='#container2'">보러가기</div> 
+    </div> 
+</a>
+
+<a class="nature2 slidecontent">
+
+    <p class="kor400 cursorclick filename1" >2.불편한 빨강.mp4</p>
+
+  <div id="slidecontent2" style="position:absolute; width: 100%; height: 100%; top:0%;"onclick="location.href='#container2'">
+    <img class="slidecontentimg cursorclick"src="./4/thumbnail.png" style="width:80%; left:-15%; bottom:5%;">
+    <p class="kor400 slidertext2 cursorclick"">불편한 빨강</p>
+    <div class="kor700 slidertitle2 cursorclick" id="slidertitle2" onclick="location.href='#container2'" >보러가기</div>   
+  </div>   
+</a>
+
+<a class="nature2 slidecontent">
+
+    <p class="kor400 cursorclick filename1" >3..mp4</p>
+
+  <div id="slidecontent3" style="position:absolute; width: 100%; height: 100%; top:0%;"onclick="location.href='#container2'">
+    <img class="slidecontentimg cursorclick"src="./4/thumbnail.png" style="width:80%; left:-15%; bottom:5%;">
+    <p class="kor400 slidertext2 cursorclick"">3번소개글</p>
+    <div class="kor700 slidertitle2 cursorclick" id="slidertitle3" onclick="location.href='#container2'">보러가기</div>    
+  </div>
+</a>
+
+<a class="nature2 slidecontent">
+
+    <p class="kor400 cursorclick filename1" >4..mp4</p>
+
+    <div id="slidecontent4" style="position:absolute; width: 100%; height: 100%; top:0%;"onclick="location.href='#container2'">
+    <img class="slidecontentimg cursorclick"src="./4/thumbnail.png" style="width:80%; left:-15%; bottom:5%;">
+    <p class="kor400 slidertext2 cursorclick"">4번소개글</p>
+    <div class="kor700 slidertitle2 cursorclick" id="slidertitle4" onclick="location.href='#container2'">보러가기</div>   
+    </div> 
+</a>
+
+<div class="cursorclick" id="leftbtn2" style="-webkit-text-stroke:1px black; color:white; font-size: 5em;" onclick="myShow2.previous()"> < </div>
+
+<div style="-webkit-text-stroke:1px black; color:white; font-size: 5em;" class="cursorclick" id="rightbtn2" onclick="myShow2.next()"> > </div>
+
+</div><!--window1닫힘-->
+
+<div id="intromentshadow"></div>
+<div id="introment">
+  <p style="position: absolute; top: 35%; left: 0%;">원하는 영상을 선택하고<br>보러 가기를 누르면,<br>패션 팁이 한가득!</p>
+</div>
+
 </div><!--container1닫힘-->
 
 <!----------------------------------container2------------------------------>
 
 <div id="container2">
-	<div id="shadow"></div>
-	<img id="thumbnail" src="./4/thumbnail.png">
-	<h1 id="text1" class="eng700">Unexposed</h1>
-	<p class="kor500" id="p1">
-	다들 외출 중에 월경과 관련된 경험이 있어?<br>초경을 하고 나서 본격적인 월경 라이프가 시작됐다면, 살아생전 겪어보지 못한 순간들을 생각보다 많이 마주하게 될꺼야.<br>예정된 다음 월경일이 찾아오지 않아 불안한 상태로 길을 걷다가 바지에 피를 보게 되는 막막한 순간이란! 버스 의자에 앉아있다가 일어서는데 물컹한 무언가가 나와 심상치 않은 느낌을 주는 아찔한 순간이란! 그런 예상치 못한 경우들 때문에 당황했을 너희들을 위해 유용한 코디 팁을 알려줄까 해.<br>100%의 완연한 대처를 보장하진 않더라도 멘붕에 빠진 너희들을 빠르게 구출해줄꺼야!
-	</p>
+  <img src="./4/pic12.gif" style="width: 100%; position: absolute; top:11%;">
+  <div id="shadow"></div>
+      <video controls class="cursorclick" id="thumbnail" poster="./4/thumbnail.png">
+        <source src="./4/1.mp4" type="video/mp4">
+      </video>
+      <img src="./4/playbtn.png" id="playbtn1" >
+
+
+  <h1 id="text1">Unexposed<br><span class="kor700" style="font-size:0.2em; position: absolute;">(:노출되지 않은)</span></h1>
+  <p class="kor500" id="p1">
+  다들 외출 중에 월경과 관련된 경험이 있어?<br>초경을 하고 나서 본격적인 월경 라이프가 시작됐다면, 살아생전 겪어보지 못한 순간들을 생각보다 많이 마주하게 될꺼야.<br>예정된 다음 월경일이 찾아오지 않아 불안한 상태로 길을 걷다가 바지에 피를 보게 되는 막막한 순간이란! 버스 의자에 앉아있다가 일어서는데 물컹한 무언가가 나와 심상치 않은 느낌을 주는 아찔한 순간이란! 그런 예상치 못한 경우들 때문에 당황했을 너희들을 위해 유용한 코디 팁을 알려줄까 해.<br>100%의 완연한 대처를 보장하진 않더라도 멘붕에 빠진 너희들을 빠르게 구출해줄꺼야!
+  </p>
+
+<a id="sticker" class="anim750 cursorclick" href="#container3">
+  
+  <div class="reveal circle_wrapper">
+    <div class="circle">
+      <p class="kor700" id="stickertxt">자세히보기 자세히보기 자세히보기 자세히보기 자세히보기 자세히보기</p>
+    </div>
+  </div>
+            
+  <div class="sticky anim750">
+    <div class="front circle_wrapper anim750">
+      <div class="circle anim750"></div>
+    </div>
+  </div>
+            
+  <div class="sticky anim750">
+    <div class="back circle_wrapper anim750">
+      <div class="circle anim750"></div>
+    </div>
+  </div>
+            
+</a>
+
+
 </div><!--container2닫힘-->
 
-<!----------------------------------container2------------------------------>
+<!----------------------------------container3------------------------------>
 
 <div id="container3">
-	<div id="redcircle"></div>
-	<div id="dashedbox"></div>
-	<img id="pic1" src="./4/pic1.JPG">
-	<img id="pic2" src="./4/pic2.png">
-	<img id="pic3" src="./4/pic3.JPG">
-	<p class="kor400" id="p2">
+  <img id="pic12" src="./4/pic10.png">
+  <div id="dashedbox"></div>
+  <img id="pic1" src="./4/pic1.JPG">
+  <img id="pic2" src="./4/pic2.png">
+  <p class="kor400" id="p2">
 밝은 색상의 하의를 입은 채로 외출하다가 월경혈이 세어나오면 제대로 걷지 못할 정도로 정말 신경쓰일꺼야. 그래서 예상 월경 주기 동안만큼은 어두운 색상에, 복잡한 문양을 갖고 있는 옷을 갖고 다니면 좋아. 계절에 따라 체크 무늬 남방이나 가디건은 허리에 둘러 혈이 센 부분을 가리기에 좋아. 페이즐리 패턴처럼 단순하지 않은 패턴이 있는 반다나를 엉덩이쪽 벨트 고리에 걸어서 쓰면 난처하지 않게끔 꽤 요긴할꺼야. 간단한 포인트 역할도 해서 일석이조인 셈!
-	</p>
-	<p class="kor500" id="ex1">남색 체크 무늬와 나무로 된 단추의 색 대비가 매력인 체크 남방은 <span class="kor700">엠폴햄(Empolham)</span>.</p>
+  </p>
+  <p class="kor500" id="ex1">남색 체크 무늬와 나무로 된 단추의 색 대비가 매력인 체크 남방은 <span class="kor700">엠폴햄(Empolham)</span>.</p>
 </div>
 
 <!----------------------------------container4------------------------------>
 
 <div id="container4">
-	<p class="kor500" id="ex2"> 검은 천과 대조되는 흰 페이즐리 패턴 반다나는<span class="kor700"> 와일드브릭스(Wild bricks)</span>.</p>
-	<p class="kor400" id="p3">
-길이가 아예 엉덩이까지 덮이는 어두운 색상의 자켓도 도움이 될꺼야. 너희한테 딱 맞는 사이즈에, 엉덩이를 덮는 길이의 자켓이 없다면 두 치수 정도 크게 입는 것도 방법이야. 여기서 중요한 점은 어두운 색상이라고 꼭 검정색만 고집할 필요는 없다는 거! 남색, 고동색, 진녹색, 와인색 등 어두운 색상들은 다양하게 있으니까. 
-</p>
+  <img id="pic13" src="./4/pic13.png">
+  <p class="kor500" id="ex2"> 검은 천과 대조되는 흰 페이즐리 패턴 반다나는<span class="kor700"> 와일드브릭스(Wild bricks)</span>.</p>
+  <div id="pic3shadow"></div>
+  <img id="pic3" src="./4/pic3.JPG">
 </div>
 
 <!----------------------------------container5------------------------------>
 
 <div id="container5">
-	<img id="pic4" src="./4/pic4.JPG">
-	<img id="pic5" src="./4/pic5.jpeg">
-	<img id="pic6" src="./4/pic6.JPG">
-	<p class="kor500" id="ex3">요철감이 있는 소재가 특징인 검정 블레이저 자켓은<span class="kor700"> 무인양품(MUJI)</span>.</p>
+  <div id="dashedbox2"></div>
+  <img src="./1/back2.gif" style="transform: rotate(-90deg); position: absolute; right:-15%; top:33%;">
+  <img id="pic4" src="./4/pic4.JPG">
+  <img id="pic5" src="./4/pic5.jpeg">
+    <p class="kor400" id="p3">
+길이가 아예 엉덩이까지 덮이는 어두운 색상의 자켓도 도움이 될꺼야. 너희한테 딱 맞는 사이즈에, 엉덩이를 덮는 길이의 자켓이 없다면 두 치수 정도 크게 입는 것도 방법이야. 여기서 중요한 점은 어두운 색상이라고 꼭 검정색만 고집할 필요는 없다는 거! 남색, 고동색, 진녹색, 와인색 등 어두운 색상들은 다양하게 있으니까. 
+</p>
 </div>
 
 <!----------------------------------container6------------------------------>
 
 <div id="container6">
-	<img id="pic8" src="./4/pic8.JPG">
-	<img id="pic7" src="./4/pic7.JPG">
+  <img id="pic6" src="./4/pic6.JPG">
+  <div id="stickybox">
+  <img id="pic11" src="./4/pic11.png">
+  <img id="pic9" src="./4/pic9.png">
+  </div>
+  <p class="kor500" id="ex3">요철감이 있는 소재가 특징인 검정 블레이저 자켓은<span class="kor700"> 무인양품(MUJI)</span>.</p>
+</div>
+
+<!----------------------------------container7------------------------------>
+
+<div id="container7">
+<div id="blind">
+<img id="pic14" src="./4/pic14.JPG">  
+</div>
+</div>
+
+<!----------------------------------container8------------------------------>
+
+<div id="container8">
+<img id="pic8" src="./4/pic8.JPG">
+<img id="pic7" src="./4/pic7.JPG">
 <p class="kor400" id="p4">
-사실 월경 주기 때 짧은 치마보다는 활동하는데 더 편한 바지를 택하는 여자들이 많아. 치마를 입고 싶어도 월경 주기라 움직이는게 더 조심스럽고 혈이 셀 때 더 잘보일 것 같기 때문이지. 너희도 월경 라이프가 점차 익숙해질 즈음에는 월경 주기임에도 치마를 입고 싶다는 생각을 할 수도 있겠지? 그럴 때는 허벅지 중간까지 오는 길이의 원피스가 추천할께. 치마에 비해 허리 쪽에 불편함이 없을 뿐더러 무릎 바로 위까지의 길이는 애매하게 긴 길이이기 때문이지.
+사실 월경 주기 때 짧은 치마보다는 활동하는데 더 편한 바지를 택하는 여자들이 많아. 치마를 입고 싶어도 월경 주기라 움직이는게 더 조심스럽고 혈이 셀 때 더 잘보일 것 같기 때문이지. 너희도 월경 라이프가 점차 익숙해질 즈음에는 월경 주기임에도 치마를 입고 싶다는 생각을 할 수도 있겠지? 그럴 때는 허벅지 중간까지 오는 길이의 원피스를 추천할께. 치마에 비해 허리 쪽에 불편함이 없을 뿐더러 무릎 바로 위까지의 길이는 애매하게 긴 길이이기 때문이지.
 </p>
 <p class="kor500" id="ex4"> 노란색 도트 무늬가 포인트인 남색 원피스는<span class="kor700">와이(Y)</span>.</p>
 
 <p class="kor500" id="ex5"> 플라이 니트 소재와 신개발된 에어 덕분에, 발의 피곤함을 주지않는 운동화는<span class="kor700">나이키 베이퍼맥스 퓨어플레티넘(Nike)</span>.</p>
 </div>
 
-<!----------------------------------container7------------------------------>
+<!----------------------------------container9------------------------------>
 
-<div id="container7">
+<div id="container9">
+
+<p class="kor400" style="position: absolute; font-size: 1em; bottom:0%; text-align: center;">
+<span class="kor700"> FILM DIRECTOR </span>_Minseo Kim(@min_estherr)<br>
+<span class="kor700">EDITOR </span> Minseo Kim<br>
+<span class="kor700">MODEL </span> Hayoung Kang(@prick_ly0917)<br>
+<span class="kor700">HAIR&MAKE UP </span> Hyelim Lee(@hyedim_mi)<br>
+<span class="kor700">ASSISTANT </span> Heejin Jo(@heeezzin_)
+</p>
+
 </div>
 
 <!----------------------------------slider------------------------------------->
@@ -132,13 +267,11 @@
   <div style="-webkit-text-stroke:1px black; color:white; font-size: 5em;" class="cursorclick" id="rightbtn" onclick="myShow.next()"> > </div>
 </div>
 
-<div class="kor700" id="slidertitle">다른 페이지</div>
-
 </div><!--slider닫힘--->
 
 <!----------------------------------footer------------------------------------->
-	<footer>
-	</footer>
+  <footer>
+  </footer>
 
 <!----------------------------------upkeys------------------------------------->
 
@@ -154,14 +287,14 @@
 <div id="menubox">
 
     <div id="dropdowncontent">
-      <a href="./index.html"><p class="kor500">Home</p></a>
+      <a href="./index.html"><p class="kor500">0.Home</p></a>
       <a href="./1.html"><p class="kor500">1.티켓부스</p></a>
-      <a href="#"><p class="kor500">Link 3</p></a>
-      <a href="#"><p class="kor500">4.월경패션후르츠</p></a>
-      <a href="#"><p class="kor500">Link 5</p></a>
-      <a href="#"><p class="kor500">Link 6</p></a>
-      <a href="#"><p class="kor500">Link 7</p></a>
-      <a href="#"><p class="kor500">Link 8</p></a>
+      <a href="#"><p class="kor500">2.월경-고-라운드</p></a>
+      <a href="#"><p class="kor500">3.월경익스프레스</p></a>
+      <a href="./4.html"><p class="kor500">4.패션후르츠스윙</p></a>
+      <a href="#"><p class="kor500">5.월경익스프레스</p></a>
+      <a href="#"><p class="kor500">6.팝콘</p></a>
+      <a href="#"><p class="kor500">7.관람차</p></a>
     </div>
 
 <div id="menucircle">
@@ -183,7 +316,6 @@
     <div class="blob"></div>
     <div class="blob"></div>
 </div>
-
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
   <defs>
     <filter id="goo">
@@ -207,810 +339,210 @@
 
 </header>
 
+<div id="monitor"></div>
+
 </body>
-
-<style type="text/css">
-
-/*----------------------------------기본세팅-------------------------------------*/
-
-/* pink:#ff5c77 blue:rgb(0,57,255) yellow:#ffb729 red:#d50000 */
-
-html, body {scroll-behavior: smooth; cursor: url(cursor.png) 0 0 ,auto; }
-
-*{width: 100%; margin:0 auto;  position: relative;}
-
-a{text-decoration: none;}
-
-header{
-  position: fixed;
-  width:100%; 
-  height: 100px;
-  top:0%;
-  left:0%;
-  margin:auto; 
-  background-image: 
-  linear-gradient(to bottom, white, white, white, white,white,white,white,white,white, 
-  rgba(255,0,0,0));
-}
-
-footer{
-    position: relative;
-    width:100%;
-    height: 40vh;
-    float:left;
-    overflow-x:hidden;
-    background: green;
-}
-
-#wrapp{
-  width:100%; 
-  height: 100vh; 
-  position: relative;  
-  margin: 0 auto;
-  overflow-x: hidden;
-}
-
-  #slider{
-    position: relative;
-    max-width:100%;
-    height: 100vh;
-    float:left;
-    overflow-x:hidden;
-    background: white;
-  }
-
-  #sliderbox{
-    position:absolute;
-    left:25%;
-    top:30%;
-    width:50%;
-    height: 50vh;
-    float:left;
-    text-align: center;
-
-  }
-
-  .slidertext{
-    position: absolute;
-    top:105%;
-    left:20%;
-    font-size: 1em;
-    width: 60%;
-    color: black;
-  }
-
-  #slidertitle{
-    position:absolute;
-    left:42.5%;
-    top:13%;
-    max-width:15%;
-    height: 7vh;
-    line-height: 2.3em;
-    font-size: 1.5em;
-    float:left;
-    text-align: center;
-    overflow: hidden;
-    border: black thin solid;
-    border-radius: 100%; 
-    color: white;
-    -webkit-text-stroke:1px black;
-  }
-
-  .slidecontent{
-    width:50%; 
-    height: 100%; 
-    position: relative;
-  }
-
-  .slidecontentimg{ 
-    position: absolute;
-  }
-  
-  .slidenumber{ 
-    width: 50px; 
-    height: 50px; 
-    top:0%; 
-    border-radius: 100%; 
-    line-height: 2em;  
-    background-color: rgb(0,57,255);  
-    color: white; 
-    font-size: 1.5em;
-    transition: all 0.3s;
-  }
-
-  .slidenumber:hover {
-    border-radius: 0%;
-  }
-
-  #leftbtn{width:10%; position: absolute; left: 0%; top:45%;}
-
-  #rightbtn{width:10%; position: absolute; right: 0%; top:45%;}
-
-
-  .kor400{font-family:'Noto Sans KR'; font-weight:400; font-style:sans-serif;}
-  .kor500{font-family:'Noto Sans KR'; font-weight:500; font-style:sans-serif;}
-  .kor700{font-family:'Noto Sans KR'; font-weight:700; font-style:sans-serif;}
-  .eng400{font-family:'Libre Baskerville';font-weight:400; font-style:serif;}
-  .eng700{font-family:'Libre Baskerville';font-weight:700; font-style:serif;}
-  .cursorclick{cursor: url(cursorclick.png) 0 0 ,auto;}
-  .cursor{cursor: url(cursor.png) 0 0 ,auto;}
-
-/*----------------------------------menu-------------------------------------*/
-
-  #menubox{ 
-    position: fixed;
-    z-index:9999; 
-    width: 200px; 
-    height: 50px; 
-    top:4%; 
-    left: 3%; 
-    margin:auto;
-    text-align: center; 
-    overflow: hidden;
-  }
-
-    #dropdowncontent{
-       position: absolute;
-       background-color: white;
-       border-style: solid;
-       border-color: black;
-       border-width: thin;
-       width: 170px;
-       height:0px;
-       top: 33px;
-       right:0%;
-       overflow: hidden;
-       visibility: hidden;
-       padding: 5px;
-    }
-
-   #up{ 
-     z-index: 9999;
-     width:75%; 
-     text-align: center; 
-     left:11%; 
-     height: 50px; 
-     margin: 0 auto; 
-     position: fixed; 
-     top:4%;
-  }
-
-
-    #dropdowncontent a {
-      color: #ffb729;
-      padding:11px 0px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-      font-family: 'Libre Baskerville', serif; 
-      font-size: 1.3em; 
-      line-height: 1.3em;
-    }
-
-    #dropdowncontent a:hover {background-color: #ff5c77;cursor: url(cursorclick.png) 0 0 ,auto;}
-
-
-
-
-	#menucircle{
-    position: absolute; 
-    width: 100px; 
-    height: 40px; 
-    background-color: rgb(0,57,255); 
-    border-radius: 50%; 
-    transition: all 0.3s;
-  }
-
-
-  #menutxt{color: white; font-family: 'Libre Baskerville'; font-style:serif; font-weight: 700; font-size: 1.5em; line-height: 1.5em;}
-
-  .blobs {
-  filter: url("#goo");
-  position:absolute;
-  top: 0px;
-  left:0;
-  bottom: 0;
-  right: 0;
-}
-
-@keyframes blob-left-anim {
-  0% {
-            transform:  translate(0, 0);
-  }
-  33% {
-            transform:  translate(-40px, 0);
-  }
-}
-
-@keyframes blob-right-anim {
-  0% {
-            transform:  translate(0, 0);
-  }
-  33% {
-            transform:  translate(40px, 0);
-  }
-}
-
-
-.blob{
-  position:absolute;
-  background-color: rgb(0,57,255);
-  right:46.5%;
-  top:10%;
-  width: 40px;
-  height: 40px;
-  line-height: 100px;
-  border-radius: 100%;
-  margin:auto;
-  animation: blob-left-anim cubic-bezier(0.77, 0, 0.175, 1) 3s infinite;
-}
-
-.blob:nth-child(2) {
-          animation-name: blob-right-anim;
-}
-.blob:nth-child(3) {
-          animation-name: blob-right-anim;
-}
-.blob:nth-child(4) {
-          animation:blob-left-anim2;
-}
-
-#blobtext1{ 
-  position:absolute; 
-  z-index:9999; 
-  font-size:1.5em; 
-  text-align: center; 
-  left:1.8%;
-  top:24%;
-  color: white;
-}
-
-#line{ 
-  position:absolute; 
-  top:50%; 
-  left:calc(50% - 450px); 
-  width:950px; 
-  height: 1.3px; 
-  background:black;
-}
-
-.prevbtn{ 
-  z-index:9999; 
-  position:fixed; 
-  right:8%; 
-  top:4%; 
-  width:40px;
-  height: 40px;  
-  background-color: rgb(0,57,255); 
-  border-radius: 100%; 
-  text-align: center; 
-  color: white; 
-  font-size:2em; 
-  line-height: 1.3em;
-  transition: all 0.5s; 
-}
-
-.prevbtn:hover {cursor: url(cursorclick.png) 0 0 ,auto; border-radius: 0%;}
-
-#prevbtn2{right:3%;}
-
-
-
-
-/*----------------------------------upkey-------------------------------------*/
-
-  @import "compass/css3";
-
- .upkey {
-   position: fixed;
-   z-index: 9999;
-   top: 93%;
-   left: 95%;
-   margin-top: -30px;
-   margin-left: -60px;
-   display: inline-block;
-   font-size: 2em;
-   color: white;
-   text-align: center;
-   width: 100px;
-   height: 60px;
-   line-height: 1.5em;
-   background:rgb(0,57,255);
-   overflow: hidden;
-   text-transform: upkeypercase;
-   transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 0.25s ease-in-out, color 0.25s ease-in-out;
-}
- .upkey:hover, .upkey.auto {
-   width: 60px;
-   margin-left: -30px;
-   border-radius: 50%;
-   color: rgba(179, 195, 58, 0);
-   transition: width 0.5s ease-in-out, margin 0.5s ease-in-out, border-radius 1s 0.25 ease-in-out, color 0.25s ease-in-out 0.25s;
-}
- .upkey:hover:before, .upkey.auto:before {
-   animation: lineupkey 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
-}
- .upkey:hover:after, .upkey.auto:after {
-   animation: tipupkey 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
-}
- .upkey:before {
-   position: absolute;
-   display: inline-block;
-   content: "";
-   background: white;
-   width: 5px;
-   height: 40px;
-   top: 50%;
-   left: 50%;
-   margin-top: -8px;
-   margin-left: -3px;
-   transform: translateY(50px);
-}
- .upkey:after {
-   position: absolute;
-   display: inline-block;
-   content: "";
-   width: 20px;
-   height: 20px;
-   color: white;
-   border-top: 5px solid;
-   border-left: 5px solid;
-   transform: rotateZ(45deg);
-   top: 50%;
-   left: 50%;
-   margin-top: -6px;
-   margin-left: -13px;
-   transform: translateY(50px) rotateZ(45deg);
-}
- @keyframes tipupkey {
-   0% {
-     transform: translateY(50px) rotateZ(45deg);
-  }
-   100% {
-     transform: translateY(-70px) rotateZ(45deg);
-  }
-}
- @keyframes lineupkey {
-   0% {
-     transform: translateY(50px);
-  }
-   100% {
-     transform: translateY(-70px);
-  }
-}
-
-/*----------------------------------container1-------------------------------------*/
-
-
-  #container1{
-    position: relative;
-    width:100%;
-    height: 100vh;
-    float: left;
-  }
-
-  #title1{
-  	position: absolute;
-  	width:60%;
-  	left:20%;
-  	top:5%;
-  	transform: rotate(-15deg);
-  }
-
-  #introbox{
-  	position: relative;
-  	width:60%; 
-  	height: 20%;
-  	top:48%;
-  	left:-14%;
-  	transform: rotate(5deg);
-  }
-
-  #introbox img {
-  	position:absolute;
-  	top:-94%;
-  	width: 100%;
-  }
-  #introbox p { 
-  	font-size: 1.5em;
-  	position: absolute; 
-  	top:35%; 
-  	left:20%;
-  }
-
-  #swing{
-  	position: absolute;
-  	width:23%;
-  	right:5%;
-  	top:35%;
-  }
-
-#window1{
-  position: absolute;
-  margin:auto;
-  top:70%;
-  left:5%;
-  width:60%;
-  height:28%;
-  background: white;
-  border-style: solid;
-  border-radius: 12px;
-  border-width: thin;
-  border-color: black;
-  overflow: hidden;
-}
-
-/*----------------------------------container2-------------------------------------*/
-
-
-  #container2{
-    position: relative;
-    width:100%;
-    height: 100vh;
-    float: left;
-    overflow-x:hidden;
-  }
-
-  #thumbnail{
-  	position: absolute;
-  	width: 60%;
-  	left: 5%;
- 	top:18%;
- 	border: solid black thin;
-  }
-
-    #shadow{
-  	position: absolute;
-  	width:60%;
-  	left:3%;
- 	top:31%;
- 	height: 50%;
- 	background-color: rgb(0,57,255); 
-  }
-
-  #text1{
-  	position: absolute;
-  	right:-35%;
-  	top:5%;
-  	font-size:9em;
-  	-webkit-text-stroke:1px black;
-  	color: white;
-  }
-
-  #p1{
-  	position: absolute;
-  	width:28%;
-  	right: 4%;
-  	top:45%;
-  	font-size: 1.2em;
-  }
-
-  /*--------------------------------container3-------------------------------------*/
-
-  #container3{
-    position: relative;
-    width:100%;
-    height: 100vh;
-    float: left;
-  }
-
-  #redcircle{
-  	position: absolute;
-  	width: 12%;
-  	height: 20%;
-  	background: red;
-  	left: 10%;
-  	border-radius: 100%;
-  }
-
-  #dashedbox{
-	position: absolute;
-	top:9%;
-	left: 15%;
-	width:45%;
-	height: 60%;
-	border:dashed thin;
-}
-
-  #p2{
-  	position: absolute;
-  	width:28%;
-  	right: 10%;
-  	top:45%;
-  	font-size: 1em;
-  }
-
-   #ex1{
-  	position: absolute;
-  	width:28%;
-  	left: 10%;
-  	top:91%;
-  	font-size: 0.5em;
-  }
-
-#pic1{
-	position: absolute;
-	top:25%;
-	left: 10%;
-	width:45%;
-	transform: rotate(-90deg);
-}
-
-#pic2{
-	position: absolute;
-	top:0%;
-	right: 14%;
-	width:40%;
-}
-  /*--------------------------------container4-------------------------------------*/
-
-  #container4{
-    position: relative;
-    width:100%;
-    height: 100vh;
-    float: left;
-  }
-
-#pic3{
-	position: absolute;
-	top:100%;
-	right: 14%;
-	width:50%;
-}
-
- #ex2{
-  	position: absolute;
-  	width:28%;
-  	right: 5%;
-  	top:59%;
-  	font-size: 0.5em;
-  }
-
-   #p3{
-  	position: absolute;
-  	width:28%;
-  	left: 10%;
-  	top:90%;
-  	font-size: 1em;
-  }
-
-
-   /*--------------------------------container5-------------------------------------*/
-
-  #container5{
-    position: relative;
-    width:100%;
-    height: 100vh;
-    float: left;
-  }
-
-#pic4{
-	position: absolute;
-	top:-20%;
-	right: 14%;
-	width:45%;
-	transform: rotate(-90deg);
-}
-
-#pic5{
-	position: absolute;
-	top:20%;
-	left: 20%;
-	width:25%;
-}
-
-#pic6{
-	position: absolute;
-	top:55%;
-	right: 10%;
-	width:50%;
-}
-
- #ex3{
-  	position: absolute;
-  	width:28%;
-  	right: 0%;
-  	top:114%;
-  	font-size: 0.5em;
-  }
-
- /*--------------------------------container6-------------------------------------*/
-
-  #container6{
-    position: relative;
-    width:100%;
-    height: 100vh;
-    float: left;
-  }
-
-#pic7{
-	position: absolute;
-	top:105%;
-	right:3%;
-	width:40%;
-	transform: rotate(-90deg);
-}
-#pic8{
-	position: absolute;
-	top:27%;
-	left:0%;
-	width:80%;
-}
-
-
- #p4{
-  	position: absolute;
-  	width:38%;
-  	left: 25%;
-  	top:140%;
-  	font-size: 1em;
-  }
-
-
- #ex4{
-  	position: absolute;
-  	width:28%;
-  	right:-5%;
-  	top:164%;
-  	font-size: 0.5em;
-  }
-
- #ex5{
-  	position: absolute;
-  	width:35%;
-  	left:2%;
-  	top:123%;
-  	font-size: 0.5em;
-  }
-
-/*--------------------------------container7-------------------------------------*/
-
-  #container7{
-    position: relative;
-    width:100%;
-    height: 100vh;
-    float: left;
-  }
-
-/*----------------------------------반응형-------------------------------------*/
-
- @media only screen and (min-width: 1920px){
-
-  header{
-    height: 150px;
-  }
-
-  #up{ 
-    z-index: 9999;
-    width:75%; 
-    text-align: center; 
-    left:14%; 
-    height: 50px; 
-    margin: 0 auto; 
-    position: fixed; 
-    top:3.3%;
-  }
- 
-
-  #menucircle{
-    position: absolute; 
-    width:130px; 
-    height:50px; 
-    background-color: rgb(0,57,255); 
-    border-radius: 50%; 
-    transition: all 0.3s;
-  }
-
-  #menutxt {
-    color: white; 
-    font-family: 'Libre Baskerville'; 
-    font-style:serif; 
-    font-weight: 700; 
-    font-size: 1.7em; 
-    line-height: 1.7em;
-  }
-
-#line{ 
-  top:65%; 
-  left:-2%; 
-  width:1400px; 
-  height: 1.3px; 
-}
-
-.prevbtn{ 
-  width:60px;
-  height: 60px;  
-  font-size:3em; 
-  line-height: 1.2em;
-}
-
-
-.blob{
-  right:50%;
-  top:10%;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  margin:auto;
-  animation: blob-left-anim cubic-bezier(0.77, 0, 0.175, 1) 3s infinite;
-}
-.blob:nth-child(2) {
-          animation-name: blob-right-anim;
-}
-.blob:nth-child(3) {
-          animation-name: blob-right-anim;
-}
-.blob:nth-child(4) {
-          animation:blob-left-anim2;
-}
-
-#blobtext1{ 
-  position:absolute; 
-  z-index:9999; 
-  font-size:2em; 
-  line-height: 1.5em;
-  text-align: center; 
-  left:-2%;
-  top:24%;
-  color: white;
-}
-
-@keyframes blob-left-anim {
-  0% {
-            transform:  translate(0, 0);
-  }
-  33% {
-            transform:  translate(-60px, 0);
-  }
-}
-
-@keyframes blob-left-anim2 {
-  0% {
-            transform:  translate(0, 0);
-  }
-  33% {
-            transform:  translate(-60px, 0);
-  }
-}
-
-@keyframes blob-right-anim {
-  0% {
-            transform:  translate(0, 0);
-  }
-  33% {
-            transform:  translate(60px, 0);
-  }
-}
-
-
-#slidertitle{
-    position:absolute;
-    left:42.5%;
-    top:13%;
-    max-width:15%;
-    height: 7vh;
-    line-height: 2em;
-    font-size: 2em;
-    float:left;
-    text-align: center;
-    overflow: hidden;
-    border: black thin solid;
-    border-radius: 100%; 
-    color: white;
-    -webkit-text-stroke:1px black;
-  }
-
-.slidertext{
-    font-size: 1.5em;
-  }
-
-</style>
 
 <script type="text/javascript">
 
+  window.onscroll = function(){
+    var t = document.documentElement.scrollTop;
+    monitor.innerHTML = t + "px";
+    if(t < 1403){
+      pic12.style.left="-30%";
+      pic2.style.right="-40%";
+      pic1.style.left="-60%";
+    }else if(t < 2005){
+      pic12.style.left="5%";
+      pic2.style.right="16%";
+      pic1.style.left="10%";
+      pic3.style.right="-70%";
+      pic3shadow.style.right="-70%";
+    }else if(t < 2753){
+      pic3.style.right="0%";
+      pic4.style.right="-50%";
+      pic5.style.left="-50%";
+      pic3shadow.style.right="2%";
+    }else if(t < 3684){
+      pic9.style.left="-50%";
+      pic11.style.right="-50%";
+      pic4.style.right="14%";
+      pic5.style.left="15%";
+    }else if(t < 4240){
+      pic9.style.left="10%";
+      pic11.style.right="5%";
+      blind.style.height="0vh";
+    }else if(t < 4355){
+      blind.style.height="10vh";
+    }
+    else if(t < 4470){
+      blind.style.height="20vh";
+    }else if(t < 4585){
+      blind.style.height="30vh";
+    }else if(t < 4700){
+      blind.style.height="40vh";
+    }else if(t < 4815){
+      blind.style.height="50vh";
+    }else if(t < 4930){
+      blind.style.height="60vh";
+    }else if(t < 5045){
+      blind.style.height="70vh";
+    }else if(t < 5160){
+      blind.style.height="80vh";
+    }else if(t < 5275){
+      blind.style.height="90vh";
+    }else if(t < 5390){
+      blind.style.height="100vh";
+    }else{
+      container.style.background = "purple";
+    }
+
+    if(t > 2240 && t < 2800){ 
+      bloom.style.animationPlayState = "running";
+    }else{
+      bloom.style.animationPlayState = "paused";
+    }
+  }
+
+  //자동스크롤
+  var s = 0;
+  //setInterval(count,100);
+  function count(){
+    s = s + 1;
+    //s합이 30이넘어야 3초가 지난것
+    if(s > 30){
+      var t = document.documentElement.scrollTop;
+      t = t + 10;
+      document.documentElement.scrollTop = t; 
+    }
+    
+  }
+
+  document.body.onmousemove = function(){
+    s = 0;
+  }
+
 /*----------------------------------slider-------------------------------------*/
 
-	myShow = w3.slideshow(".nature", 0);
+  myShow = w3.slideshow(".nature", 0);
+  myShow2 = w3.slideshow(".nature2", 0);
+
+/*----------------------------------window1-------------------------------------*/
+
+  x1.onclick=function(){
+      window1.style.visibility="hidden";
+      line1.style.visibility="hidden";
+      thumbnail.style.visibility="hidden";
+      mini1.style.visibility="hidden";
+      big1.style.visibility="hidden";
+      slidecontent1.style.visibility="hidden";
+      slidecontent2.style.visibility="hidden";
+      slidecontent3.style.visibility="hidden";
+      slidecontent4.style.visibility="hidden";
+      leftbtn2.style.visibility="hidden";
+      rightbtn2.style.visibility="hidden";
+      slidertitle1.style.visibility="hidden";
+      slidertitle2.style.visibility="hidden";
+      slidertitle3.style.visibility="hidden";
+
+     slidertitle4.style.visibility="hidden"; 
+    }
+
+    mini1.onclick=function(){
+      window1.style.height="5%"
+      big1.style.visibility="visible";
+      mini1.style.visibility="hidden";
+      line1.style.visibility="hidden";
+      thumbnail.style.visibility="hidden";
+      slidecontent1.style.visibility="hidden";
+      slidecontent2.style.visibility="hidden";
+      slidecontent3.style.visibility="hidden";
+      slidecontent4.style.visibility="hidden";
+      leftbtn2.style.visibility="hidden";
+    rightbtn2.style.visibility="hidden";
+    slidertitle1.style.visibility="hidden";
+    slidertitle2.style.visibility="hidden";
+    slidertitle3.style.visibility="hidden";
+    slidertitle4.style.visibility="hidden";
+    }
+
+    big1.onclick=function(){
+      big1.style.visibility="hidden";
+      mini1.style.visibility="visible";
+      window1.style.height="33%";
+      line1.style.visibility="visible";
+      thumbnail.style.visibility="visible";
+      slidecontent1.style.visibility="visible";
+      slidecontent2.style.visibility="visible";
+      slidecontent3.style.visibility="visible";
+      slidecontent4.style.visibility="visible";
+      leftbtn2.style.visibility="visible";
+    rightbtn2.style.visibility="visible";
+    slidertitle1.style.visibility="visible";
+    slidertitle2.style.visibility="visible";
+    slidertitle3.style.visibility="visible";
+    slidertitle4.style.visibility="visible";
+    }
+
+/*-----------------------------페이지 숨김----------------------------------*/
+
+    slidecontent1.onclick=function(){
+      container2.style.height="100vh";
+      container3.style.height="100vh";
+      container4.style.height="100vh";
+      container5.style.height="100vh";
+      container6.style.height="100vh";
+      container7.style.height="100vh";
+      container8.style.height="100vh";
+      container9.style.height="40vh";
+      pic6.style.visibility="visible";
+      stickybox.style.visibility="visible";
+      ex3.style.visibility="visible";
+
+    }
+
+    slidertitle2.onclick=function(){
+      container2.style.height="0vh";
+      container3.style.height="0vh";
+      container4.style.height="0vh";
+      container5.style.height="0vh";
+      container6.style.height="0vh";
+      container7.style.height="0vh";
+      container8.style.height="0vh";
+      container9.style.height="0vh";
+      pic6.style.visibility="hidden";
+      stickybox.style.visibility="hidden";
+      ex3.style.visibility="hidden";
+    }
+
+    slidertitle3.onclick=function(){
+      container2.style.height="0vh";
+      container3.style.height="0vh";
+      container4.style.height="0vh";
+      container5.style.height="0vh";
+      container6.style.height="0vh";
+      container7.style.height="0vh";
+      container8.style.height="0vh";
+      container9.style.height="0vh";
+      pic6.style.visibility="hidden";
+      stickybox.style.visibility="hidden";
+      ex3.style.visibility="hidden";
+    }
+
+    slidertitle4.onclick=function(){
+      container2.style.height="0vh";
+      container3.style.height="0vh";
+      container4.style.height="0vh";
+      container5.style.height="0vh";
+      container6.style.height="0vh";
+      container7.style.height="0vh";
+      container8.style.height="0vh";
+      container9.style.height="0vh";
+      pic6.style.visibility="hidden";
+      stickybox.style.visibility="hidden";
+      ex3.style.visibility="hidden";
+    }
+
 
 /*----------------------------------menu-------------------------------------*/
 
@@ -1042,7 +574,20 @@ footer{
   /*-------------------------------perv,nexkey---------------------------------*/
 
     function goBack() { window.history.back() }
-  	function goBack2() { window.history.forward() }
+    function goBack2() { window.history.forward() }
+
+  x2.onclick=function(){
+      introbox.style.visibility="hidden"
+  }
+
+  /*----------------------------------play,pause--------------------------------------*/
+
+  thumbnail.onmouseover=function(){
+    playbtn1.style.visibility="hidden";
+    thumbnail.play();
+
+  }
+
 
 </script>
 </html>
