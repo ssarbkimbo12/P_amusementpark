@@ -24,8 +24,8 @@
     height: 20px;
     text-align: center;
     font-size: 0.8em;
-    top:29%;
-    left:-1.5%;
+    top:31%;
+    left:-2%;
     transition: all 0.2s;
   }
 
@@ -117,12 +117,12 @@
 
     @keyframes sideani{
       from{left: -3%;}
-      to{left:-3.3%;}
+      to{left:-5.3%;}
       }
 
     @keyframes sideanii{
       from{right:0%;}
-      to{right:-0.3%;}
+      to{right:-2.3%;}
       }
 
   /*---------------------------------------------------------------------------*/
@@ -468,8 +468,8 @@
   }
 
   #numberbox1{ 
-    top:33%; 
-    left: 10.5%;
+    top:36%; 
+    left: 10%;
   }
   
   #numberbox2{
