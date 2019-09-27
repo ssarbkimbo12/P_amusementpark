@@ -224,12 +224,12 @@ left:20%;">
 
 <div id="slider">
 <div id="sliderbox">
-  <a class="nature slidecontent" href="./index.html">
+  <a class="nature slidecontent" href="./2.html">
     <img class="slidecontentimg cursorclick"src="./map/2.gif" style="width:100%; left:0%; bottom:-4%;">
     <div class="eng700 slidenumber cursorclick">2</div>
-    <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>
+    <p class="kor400 slidertext cursorclick""><span class="kor500" style="font-size: 1.1em;">월경-고-라운드</span><br>회전목마처럼 돌고 돌아오는 월경주기때문에 머리가 아프다면 들어와봐!</p>
   </a>
-  <a class="nature slidecontent" href="index.html">
+  <a class="nature slidecontent" href="./3.html">
     <img class="slidecontentimg cursorclick"src="./map/3.gif" style="width:130%; left:-10%; bottom:-4%;">
     <div class="eng700 slidenumber cursorclick">3</div>
     <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>
@@ -238,20 +238,20 @@ left:20%;">
   <a class="nature slidecontent" href="./4.html">
     <img class="slidecontentimg cursorclick"src="./map/4.gif" style="width:74%; left:14%; bottom:0%;">
     <div class="eng700 slidenumber cursorclick">4</div>
-    <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>        
+    <p class="kor400 slidertext cursorclick""><span class="kor500" style="font-size: 1.1em;">패션후르츠 스윙</span><br>월경 기간을 지혜롭고 편안하게 보낼 수 있는 패션팁을 알려줄게!</p>
   </a>
-  <a class="nature slidecontent" href="">
+  <a class="nature slidecontent" href="./5.html">
     <img class="slidecontentimg cursorclick"src="./map/5.gif" style="width:13%; left:44%; bottom:-0.5%;">
     <div class="eng700 slidenumber cursorclick">5</div>
     <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>    
   </a>
 
-  <a class="nature slidecontent" href="">
+  <a class="nature slidecontent" href="./6.html">
     <img class="slidecontentimg cursorclick"src="./map/6.gif" style="width:100%; left:0%; bottom:0%;">
     <div class="eng700 slidenumber cursorclick">6</div>
     <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>    
   </a>
-  <a class="nature slidecontent" href="">
+  <a class="nature slidecontent" href="./7.html">
     <img class="slidecontentimg cursorclick"src="./map/7.gif" style="width:90%; left:5%; bottom:0%;">
     <div class="eng700 slidenumber cursorclick">7</div>
     <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>    
@@ -266,7 +266,17 @@ left:20%;">
 </div><!--slider닫힘--->
 
 <footer>
-  
+
+<div id="footerwindow">
+  <svg id="footerline">
+   <line x1="0" y1="25%" x2="100%" y2="25%" style="stroke:black;stroke-width:1" />
+  </svg>
+  <img class="cursorclick" id="footerx" src="./1/x.png">
+  <img class="cursorclick" id="footerbig" src="./1/big.png">
+  <img class="cursorclick" id="footermini" src="./1/mini.png">
+  <p class="kor400" id="footerfilename"> footer.txt</p>
+</div>
+
 </footer>
 
 </div> <!--wrap닫힘--->
@@ -282,7 +292,7 @@ left:20%;">
       <a href="./2.html"><p class="kor500">2.월경-고-라운드</p></a>
       <a href="./3.html"><p class="kor500">3.월경익스프레스</p></a>
       <a href="./4.html"><p class="kor500">4.패션후르츠스윙</p></a>
-      <a href="./5.html"><p class="kor500">5.월경익스프레스</p></a>
+      <a href="./5.html"><p class="kor500">5.자이로드롭</p></a>
       <a href="./6.html"><p class="kor500">6.팝콘</p></a>
       <a href="./7.html"><p class="kor500">7.관람차</p></a>
     </div>
@@ -331,6 +341,7 @@ left:20%;">
 
 <script type="text/javascript">
   myShow = w3.slideshow(".nature", 0);
+  
   textcolor2.onclick=function(){
     textcolor.style.background="white";
     textcolor2.style.background="blue";
@@ -365,6 +376,8 @@ left:20%;">
   }
   function goBack() { window.history.back() }
   function goBack2() { window.history.forward() }
+
+
   var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -489,7 +502,7 @@ left:20%;">
     big1.onclick=function(){
       big1.style.visibility="hidden"
       mini1.style.visibility="visible"
-      window1.style.height="30%"
+      window1.style.height="29%"
       line1.style.visibility="visible"
       intro.style.visibility="visible"
       textcolor.style.visibility="visible"
@@ -520,6 +533,27 @@ left:20%;">
       line4.style.visibility="visible";
       p2.style.visibility="visible";
     }
+
+    footerx.onclick=function(){
+      footerwindow.style.visibility="hidden";
+      footerline.style.visibility="hidden";
+      footermini.style.visibility="hidden";
+      footerbig.style.visibility="hidden";
+    }
+    footermini.onclick=function(){
+      footerwindow.style.height="13%"
+      footerbig.style.visibility="visible";
+      footermini.style.visibility="hidden";
+      footerline.style.visibility="hidden";
+    }
+
+    footerbig.onclick=function(){
+      footerbig.style.visibility="hidden";
+      footermini.style.visibility="visible";
+      footerwindow.style.height="30vh";
+      footerline.style.visibility="visible";
+    }
+
     spot1.onmouseover=function(){
       spot1.style.borderRadius="0%";
       spot1line.style.height="60%";
@@ -647,6 +681,7 @@ left:20%;">
     e.stopPropagation();
     $('.arrow').toggleClass('bounceAlpha');
   });
+
 </script>
 
 </html>
