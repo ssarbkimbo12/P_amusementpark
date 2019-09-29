@@ -1,9 +1,11 @@
-<DOCTYPE html>
+<D받CTYPE html>
 <html>
 <head>
   <title>periodexpress</title>
 </head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Comportible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Noto+Sans+KR:400,500,700&display=swap" rel="stylesheet">
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <link rel="stylesheet" type="text/css" href="3.css">
@@ -50,10 +52,16 @@
       <img src="./map/3.gif">  
     </div>
 
+    <div id="color3">
+      <img class="cursorclick"id="color3img"src="./1/x.png">
+    </div>
     <div id="title2">
       <img src="./3/title2.png">
     </div>
 
+    <div id="color2">
+      <img class="cursorclick"id="color2img"src="./1/x.png">
+    </div>
     <div id="title1">
       <img src="./3/title1.png">
     </div>
@@ -69,6 +77,22 @@
 <!--------------------------------container2------------------------------------> 
 
   <div id="container2">
+
+  <div id="window1">
+ <svg id="line1">
+   <line x1="0" y1="25%" x2="100%" y2="25%" style="stroke:black;stroke-width:1" />
+ </svg>
+  <p id="p1"><span>나의 초경에 대해 기록하고</span> 나에게 꼭 어울리는 초경열차를 만들어보자! 혹시알아? 초경열차가 너를 새로운 월경의 세계로 안내할지!</p>
+  <img class="cursorclick" id="x2" src="./1/x.png">
+  <img class="cursorclick" id="mini1" src="./1/mini.png">
+  <img class="cursorclick" id="big1" src="./1/big.png">
+  <p class="kor400" id="filename1"> 초경열차를 타는 법.txt</p>
+
+  <div class="jumbotron cursorclick" role="button" onclick="randomImage()">
+    <a class="btn btn-default btn-lg  kor700">열차 받기</a>
+</div>
+</div><!--window1닫힘-->
+
     <div id="textbox2">
       <img src="./3/textbox.gif">
       <form action="/action_page.php" class="inputtext">
@@ -89,8 +113,22 @@
           <input type="text" value="" id="input12">
           <input type="text" value="" id="input13">
       </form>
+    </div><!---textbox2닫힘-->
+    <img id="rail" src="./3/rail.png">
+
+  <!-----------------------randomimage--------------------------->
+
+<div class="container">
+  <div class="row">
+  <div class="col-sm-12">
+    <div id="random-image-container">
     </div>
   </div>
+</div>
+
+</div>
+
+  </div><!---container2닫힘-->
 
 <!------------------------------slider-----------------------------------------> 
 
@@ -266,6 +304,56 @@
 
 x1img.onclick=function(){
   textbox.style.visibility="hidden";
+}
+
+color2img.onclick=function(){
+  title1.style.visibility="hidden";
+  color2.style.visibility="hidden";
+}
+
+color3img.onclick=function(){
+  title2.style.visibility="hidden";
+  color3.style.visibility="hidden";
+}
+
+
+/*-------------------container2------------------------*/
+
+x2.onclick=function(){
+      window1.style.visibility="hidden";
+      line1.style.visibility="hidden";
+      mini1.style.visibility="hidden";
+      big1.style.visibility="hidden";
+      p1.style.visibility="hidden";
+  }
+mini1.onclick=function(){
+      window1.style.height="5%"
+      big1.style.visibility="visible";
+      mini1.style.visibility="hidden";
+      line1.style.visibility="hidden";
+      p1.style.visibility="hidden";
+  }
+
+big1.onclick=function(){
+      big1.style.visibility="hidden";
+      mini1.style.visibility="visible";
+      window1.style.height="35%";
+      line1.style.visibility="visible";
+      p1.style.visibility="visible";
+  }
+
+  /*-------------------randomimage------------------------*/
+
+  function randomImage(){
+  var el = document.getElementById("random-image-container");
+  var randomNumber = Math.floor((Math.random() * 3) + 1);
+  if (randomNumber == 1){
+  el.className = "random-image-01";
+  } else if (randomNumber == 2) {
+    el.className = "random-image-02";
+  } else {
+    el.className = "random-image-03"
+  }
 }
 
 
