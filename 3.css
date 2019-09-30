@@ -1748,7 +1748,7 @@ header{
   #rail{
     position: absolute;
     width:72%;
-    bottom:5%;
+    bottom:4.5%;
     right:0%;
   }
 
@@ -1829,7 +1829,61 @@ header{
   transform: rotate(90deg);
 }
 
+/*---------------------------------------arrow----------------------------------------*/
 
+#centercon{
+  position: absolute;
+  bottom:11%;
+  left:50%;
+  display: flex;
+  height:11%;
+  width:6.3%;
+  transform: rotate(90deg);
+  align-items: center;
+  justify-content: center;
+}
+.arrow {
+  position: absolute; 
+  bottom: 0;  
+  margin-left:0px; 
+  width: 60px; 
+  height: 60px; 
+  background-size: contain; 
+  top:24px;
+}
+
+
+  #toolsbox{
+    position: absolute;
+    top:17%;
+    left: 3%;
+    width:32%;
+    height:50vh;
+  }
+  #pillsbox{
+    position: absolute;
+    top:42%;
+    left:23%;
+    width:32%;
+    height:50vh;
+  }
+
+  #p3{
+  position: absolute;
+  font-size: 1.3em;
+  top:13%;
+  width: 90%;
+  left: 5%;
+  line-height: 1.5em;
+}
+
+
+#filename3{
+  position: absolute;
+  right: -40%;
+  top:15px;
+  font-size: 120%;
+}
 
 
 }/*--반응형닫힘--*/
