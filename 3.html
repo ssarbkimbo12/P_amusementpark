@@ -166,23 +166,94 @@
   <img class="cursorclick" id="big2" src="./1/big.png">
   <p class="kor400" id="filename2"> 왜 나에게 이런일이?.txt</p>
 
+</div><!--window2닫힘-->
+
+    <div id="textbox3">
+      <div id="color4">
+        <div id="x5">
+          <img src="./1/x.png" class="cursorclick"  id="x5img">
+        </div>
+      </div>
+      <div id="circleback2"></div>   
+      <div id="circle2"></div>  
+    </div><!--textbox닫힘-->
+
+<a href="#container4" id="centercon">
+    <div class="round cursorclick">
+        <div class="cursorclick"id="cta">
+            <span class="arrow primera next "></span>
+            <span class="arrow segunda next "></span>
+        </div>
+    </div>
+</a>  
+
+</div><!--container3닫힘-->
+
+<!--------------------------------container4------------------------------------> 
+
+<div id="container4">
+
+    <div id="pillsbox">
+  
+   <div id="pills">
+    <img src="./3/pills.png">
+   </div>
+  
+   <div class="cursorclick" id="pillsboxx">
+    <img src="./1/x.png" id="pillsboxximg">
+   </div>
+  
+  </div><!--pillsbox닫힘-->
+
+
+  <div id="toolsbox">
+  
+   <div id="tools">
+    <img src="./3/tools.png">
+   </div>
+  
+   <div class="cursorclick" id="toolsboxx">
+    <img src="./1/x.png" id="toolsboxximg">
+   </div>
+  
+  </div><!--toolsbox닫힘-->
+
 <div id="window3">
- <svg id="line2">
+
+ <svg id="line3">
    <line x1="0" y1="25%" x2="100%" y2="25%" style="stroke:black;stroke-width:1" />
  </svg>
-  <img class="cursorclick" id="x5" src="./1/x.png">
+  <p id="p3"class="kor400" style="display: inline-block;">
+<span class="kor700"id="p3_1">우선, 우리의 포궁은</span><br>
+질을 통해 바깥과 연결되어 있고 질은 단단한 피부에 비해 병균이 
+들어오기 쉬운 점막으로 이루어져 있어. 내 몸의 일부인데 병균이 
+들어오면 곤란하잖아? 병균이 들어오지 않도록 자주 씻어주는게 
+좋겠지? 하루에 한번정도는 씻는게 좋아. 
+씻을때는 비데를 사용하거나 대야에 물을 받아서 씻는 것 보다 
+샤워기로 흐르는물에 씻어 주는게 좋아. 또한 월경혈은 월경하는 
+기간동안 계속해서 나오기 때문에 월경 용품의 도움을 받는게 
+좋을거야. 월경용품의 종류는 정말 다양해. 월경 놀이동산에서 
+하나하나 살펴보고, 마음에 드는 월경용품을 선택해서 사용하면 
+조금 수월해질거야. 어떠한 월경 용품을 선택하든, 교체하기 전 
+후에는 손을 깨끗하게 씻는것도 잊지 말아줘. 말했듯이 병균이 
+옮기 쉬운 조건 이니까 말이야. 만일을 위해 원하는 월경용품을 
+몇 개 챙겨 가방에 넣어다니는 것도 좋은 생각이야. 
+만약 갑작스럽게 월경이 시작됐는데 월경용품을 챙기지 못했다고
+해도 괜찮아. 근처 편의점이나 생리대 자판기에서  소량으로 구매할
+수도 있고 주변 사람에게 부탁해볼 수도 있어. 
+월경이 시작되면 두통,몸의 피로,기분 등 다양한 변화가 나타나고 
+이로인해 힘들어 질 수도 있어. 만약 통증이 온다면 참지말고 용법,
+용량을 확인 한 뒤 진통제를 먹는게 좋아. 따듯한 찜질팩으로 
+아랫배나 허리를 찜질 해줘도 효과를 볼 수 있어. 
+따듯한 차를 마셔도 좋고, 간단한 스트레칭을 해도 조금 나아질거야.</p>
+  <img class="cursorclick" id="x6" src="./1/x.png">
   <img class="cursorclick" id="mini3" src="./1/mini.png">
   <img class="cursorclick" id="big3" src="./1/big.png">
-  <p class="kor400" id="filename3"> 초경열차를 타는 법.txt</p>
-
-  <div class="jumbotron cursorclick" role="button" onclick="randomImage()">
-    <a class="btn btn-default btn-lg  kor700">열차 받기</a>
-</div>
-</div><!--window1닫힘-->
+  <p class="kor400" id="filename3"> 월경 관리법.txt</p>
 
 </div><!--window2닫힘-->
 
-</div><!--container3닫힘->
+</div><!--container4닫힘-->
 
 <!------------------------------slider-----------------------------------------> 
 
@@ -360,6 +431,10 @@ x1img.onclick=function(){
   textbox.style.visibility="hidden";
 }
 
+x5img.onclick=function(){
+  textbox3.style.visibility="hidden";
+}
+
 color2img.onclick=function(){
   title1.style.visibility="hidden";
   color2.style.visibility="hidden";
@@ -417,6 +492,14 @@ big1.onclick=function(){
     title3box.style.visibility="hidden"
   }
 
+  toolsboxximg.onclick=function(){
+    toolsbox.style.visibility="hidden"
+  }
+
+  pillsboxximg.onclick=function(){
+    pillsbox.style.visibility="hidden"
+  }
+
   x4.onclick=function(){
     window2.style.visibility="hidden";
     line2.style.visibility="hidden";
@@ -440,9 +523,36 @@ big1.onclick=function(){
       p2.style.visibility="visible";
   }
 
+  x6.onclick=function(){
+      window3.style.visibility="hidden";
+      line3.style.visibility="hidden";
+      mini3.style.visibility="hidden";
+      big3.style.visibility="hidden";
+      p3.style.visibility="hidden";
+  }
 
+  mini3.onclick=function(){
+      window3.style.height="5%"
+      big3.style.visibility="visible";
+      mini3.style.visibility="hidden";
+      line3.style.visibility="hidden";
+      p3.style.visibility="hidden";
+  }
 
+  big3.onclick=function(){
+      big3.style.visibility="hidden";
+      mini3.style.visibility="visible";
+      window3.style.height="75%";
+      line3.style.visibility="visible";
+      p3.style.visibility="visible";
+  }
 
+    $('.round').click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $('.arrow').toggleClass('bounceAlpha');
+  });
+    
 </script>
 
 </html>
