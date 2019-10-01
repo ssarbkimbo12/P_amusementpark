@@ -47,7 +47,7 @@
   <p class="kor400 cursorclick filename1" >1.Unexposed.mp4</p>
 
   <div id="slidecontent1" style="position:absolute; width: 100%; height: 100%; top:0%;"onclick="location.href='#container2'">
-      <img class="slidecontentimg cursorclick"src="./4/thumbnail.gif" style="width:80%; left:-15%; bottom:6%;">
+      <img class="slidecontentimg cursorclick"src="./4/thumbnail.jpg" style="width:80%; left:-15%; bottom:6%;">
       <p class="kor400 slidertext2 cursorclick">다들 외출 중에 월경과 관련된 경험있어?
       예상치 못한 경우들 때문에 당황했을 너희들을 위해 유용한 팁을 알려줄까 해.</p>  
       <div class="kor700 slidertitle2 cursorclick" id="slidertitle1" onclick="location.href='#container2'">보러가기</div> 
@@ -103,7 +103,7 @@
 
   <img src="./4/pic12.gif" style="width: 100%; position: absolute; top:11%;">
   <div id="shadow"></div>
-      <video controls class="cursorclick" id="thumbnail" poster="./4/thumbnail.png">
+      <video controls class="cursorclick" id="thumbnail" poster="./4/thumbnail.jpg">
         <source src="./4/1.mp4" type="video/mp4">
       </video>
       <img src="./4/playbtn.png" id="playbtn1" >
@@ -202,9 +202,9 @@
 
   <img src="./4-2/background.gif" style="width: 130%; position: absolute; top:-15%;">
       <video controls class="cursorclick" id="thumbnail2" poster="./4-2/thumbnail.png">
-        <source src="./4/1.mp4" type="video/mp4">
+        <source src="./4-2/2.mp4" type="video/mp4">
       </video>
-      <img src="./4/playbtn.png" id="playbtn2" >
+      <img src="./4/playbtn.png" id="playbtn2">
 
   <h1 id="text2">Stuffy Red<br><span class="kor700" style="font-size:0.2em; position: absolute; width:96%;background:white; text-align: left; right:0%; padding:2%;">(:답답한 빨간색)</span></h1>
   <p class="kor500" id="movie2p1">
@@ -351,8 +351,9 @@
   <a class="nature slidecontent" href="./3.html">
     <img class="slidecontentimg cursorclick"src="./map/3.gif" style="width:130%; left:-10%; bottom:-4%;">
     <div class="eng700 slidenumber cursorclick">3</div>
-    <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>
+    <p class="kor400 slidertext cursorclick"><span class="kor500" style="font-size: 1.1em;">월경 익스프레스</span><br>오르락내리락 나를 힘들게 하는 월경!<br>월경 익스프레스를 타고 헤쳐나간다면 두려울 게 없지.</p>
   </a>
+
   <a class="nature slidecontent" href="./5.html">
     <img class="slidecontentimg cursorclick"src="./map/5.gif" style="width:13%; left:44%; bottom:-2%;">
     <div class="eng700 slidenumber cursorclick">5</div>
@@ -792,6 +793,11 @@
   thumbnail.onmouseover=function(){
     playbtn1.style.visibility="hidden";
     thumbnail.play();
+  }
+
+  thumbnail2.onmouseover=function(){
+    thumbnail2.play();
+    playbtn2.style.visibility="hidden";
   }
 </script>
 </html>
