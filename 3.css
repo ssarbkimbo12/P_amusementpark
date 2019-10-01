@@ -76,6 +76,46 @@ footer{
   position: absolute;
 }
 
+
+.footernumbers{
+  position:absolute;
+  width: 3.3%;
+  top:20%;
+  height:17%;
+  background: rgb(0,57,255);
+  border-radius: 100%;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: white;
+  text-decoration: none;
+   transition: all 0.3s;
+}
+
+.footernumbers:hover{
+  border-radius: 0%;
+}
+
+
+#footernumber1{
+  right: 21%;
+}
+#footernumber2{
+  right: 17%;
+}
+#footernumber3{
+  right: 13%;
+}
+#footernumber4{
+  right: 9%;
+}
+#footernumber5{
+  right: 5%;
+}
+#footernumber6{
+  right: 1%;
+}
+
 #wrapp{
   width:100%; 
   height: 100vh; 
@@ -1282,7 +1322,7 @@ footer{
   .slidenumber{ 
     width: 50px; 
     height: 50px; 
-    top:6%; 
+    top:3%; 
     border-radius: 100%; 
     line-height: 2em;  
     background-color: rgb(0,57,255);  
@@ -1792,6 +1832,14 @@ header{
     width: 14%;
   }
 
+   #circleback2{
+    width: 22%;
+  }
+
+  #circle2{
+    width: 22%;
+  }
+
 
   #color2{
     top:31%;
@@ -1831,25 +1879,20 @@ header{
 
 /*---------------------------------------arrow----------------------------------------*/
 
-#centercon{
-  position: absolute;
-  bottom:11%;
-  left:50%;
-  display: flex;
-  height:11%;
-  width:6.3%;
-  transform: rotate(90deg);
-  align-items: center;
-  justify-content: center;
-}
+#cta .arrow{left: 14%;}
+
 .arrow {
-  position: absolute; 
-  bottom: 0;  
-  margin-left:0px; 
-  width: 60px; 
-  height: 60px; 
-  background-size: contain; 
-  top:24px;
+  width: 72px; 
+  height: 72px; 
+  top:22px;
+}
+
+.segunda{margin-left: 34px;}
+
+#centercon{
+  height:12%;
+  bottom: 10%;
+  width:6.8%;
 }
 
 
@@ -1885,6 +1928,18 @@ header{
   font-size: 120%;
 }
 
+ #window3{
+  top:16%;
+}
+
+@keyframes windowani {
+    0% {top:16%;}
+    100%{top:16.5%;}
+  }
+
+  .footernumbers{
+  line-height: 2em;
+}
 
 }/*--반응형닫힘--*/
 
