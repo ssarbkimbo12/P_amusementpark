@@ -96,22 +96,22 @@
   #titlebox{
     width: 900px; 
     left: calc(50% - 450px); 
-    top:4%; 
+    top:10%; 
     position: relative; 
     animation:mymove 1.1s ease-in-out; 
   }
 
     @keyframes mymove{
       from{top: -30%;}
-      to{top:4%;}
+      to{top:10%;}
       }
 
-    #title1 { width:920px; left:calc(50% - 460px); top:3%;}
+    #title1 { width:920px; left:calc(50% - 460px); top:0%;}
 
-    #title_side1{ position:absolute; width: 100px; top: 58%; left:-3%;
+    #title_side1{ position:absolute; width: 100px; top: 40%; left:-3%;
                   animation: sideani 1.1s infinite ease-in-out; }
 
-    #title_side2{ position:absolute; width: 100px; top: 58%; right:0%;
+    #title_side2{ position:absolute; width: 100px; top: 40%; right:0%;
      animation: sideanii 1.1s infinite ease-in-out;}
 
 
@@ -155,7 +155,7 @@
       position: absolute; 
       top: -80%; 
       width: 600px; 
-      left: calc(50% - 300px); 
+      left: calc(50% - 285px); 
       animation:mymove1 1s ease-out infinite; 
       transition:all 1s;
     }
@@ -638,24 +638,24 @@
   #titlebox{
     width: 50%; 
     left:25%; 
-    top:2%; 
+    top:7%; 
     position: absolute; 
     animation:mymove 1.1s ease-in-out; 
   }
   
     @keyframes mymove{
       from{top: -25%;}
-      to{top:2%;}
+      to{top:7%;}
       }
    
 
   #title1 { width:1200px; left:calc(50% - 600px); top:2%;}
 
 
-  #title_side1{ position:absolute; width: 100px; top: 58%; left:-10%;
+  #title_side1{ position:absolute; width: 100px; top: 40%; left:-10%;
                   animation: 1.1s sideani infinite ease-in-out; }
 
-  #title_side2{ position:absolute; width: 100px; top: 58%; right:-7%;
+  #title_side2{ position:absolute; width: 100px; top: 40%; right:-7%;
      animation:  1.1s  sideanii infinite ease-in-out;}
 
 
