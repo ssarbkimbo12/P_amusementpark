@@ -15,6 +15,20 @@
 <!--------------------------------container1------------------------------------> 
 
   <div id="container1">
+  <div id="popcorn">  
+    <img src="./map/6.gif">
+    <div class="cursorclick" id="x2">
+  <img src="./1/x.png">
+</div>
+  </div>
+  <div id="line1"></div>
+  <div id="line2"></div>
+
+<div id="introbox">
+  <p class="kor500">
+    팝콘처럼 어디로 튈 지 모르는 월경기간 때 보면 좋을 유투브 영상과 영화,책들을 소개시켜줄게!
+  </p>
+</div>
 
 <a href="#" class="cursorclick"> 
   <span class="upkey eng700 cursorclick"> 
@@ -28,6 +42,13 @@
 
 <div id="slider">
 <div id="sliderbox">
+
+  <a class="nature slidecontent" href="./1.html">
+    <img class="slidecontentimg cursorclick"src="./map/1.gif" style="width:55%; left:22%; bottom:-4%;">
+    <div class="eng700 slidenumber cursorclick">1</div>
+    <p class="kor400 slidertext cursorclick""><span class="kor500" style="font-size: 1.1em;">월경 티켓부스</span><br>초경 맞이 랜드에 온 걸 환영해!<br>월경이 발생하는 과정을 알아보자.</p>
+  </a>
+
   <a class="nature slidecontent" href="./2.html">
     <img class="slidecontentimg cursorclick"src="./map/2.gif" style="width:100%; left:0%; bottom:-4%;">
     <div class="eng700 slidenumber cursorclick">2</div>
@@ -47,12 +68,6 @@
   <a class="nature slidecontent" href="./5.html">
     <img class="slidecontentimg cursorclick"src="./map/5.gif" style="width:13%; left:44%; bottom:-0.5%;">
     <div class="eng700 slidenumber cursorclick">5</div>
-    <p class="kor400 slidertext cursorclick">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>    
-  </a>
-
-  <a class="nature slidecontent" href="./6.html">
-    <img class="slidecontentimg cursorclick"src="./map/6.gif" style="width:100%; left:0%; bottom:0%;">
-    <div class="eng700 slidenumber cursorclick">6</div>
     <p class="kor400 slidertext cursorclick">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>    
   </a>
 
@@ -182,7 +197,7 @@
       footerwindow.style.height="13%"
       footerbig.style.visibility="visible";
       footermini.style.visibility="hidden";
-      footerline.style.visibility="hidden";
+      footerline.style.visibility="hidden"; 
     }
 
     footerbig.onclick=function(){
@@ -190,6 +205,10 @@
       footermini.style.visibility="visible";
       footerwindow.style.height="30vh";
       footerline.style.visibility="visible";
+    }
+
+    x2.onclick=function(){
+      popcorn.style.visibility="hidden"
     }
 </script>
 

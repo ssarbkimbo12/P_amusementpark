@@ -219,6 +219,77 @@ footer{
     background:white;
   }
 
+  #popcorn img{
+    position: absolute;
+    width:100%;
+  }
+
+  #line1{
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    top:40%;
+    right: 0%;
+    background: black;
+  }
+
+  #line2{
+    position: absolute;
+    width: 55%;
+    height: 1px;
+    top:62%;
+    right: 0%;
+    background: black;
+  }
+
+  #popcorn{ 
+  position:absolute; 
+  width:29%; 
+  height:46%;
+  left:7%; 
+  top:25%;
+  border:solid thin black;
+  border-radius: 50%;
+  animation: gradientani 2s infinite linear;
+}
+
+@keyframes gradientani {
+    0% {background-image: linear-gradient(to bottom right, white, white,lightgray);}
+    50%{background-image: linear-gradient(to bottom right, white,white,lightgray, white,white);}
+    100%{background-image: linear-gradient(to bottom right,lightgray, white,white);}
+  }
+
+
+#x2{
+  position: absolute;
+  width:9.4%;
+  height:9.5%;
+  background: rgba(0,0,0,.3);
+  border-radius: 50%;
+  top:0%;
+  right: 10%;
+}
+
+#x2 img{
+  position: absolute;
+  width: 73%;
+  top:15%;
+  left:12%;
+}
+
+#introbox{
+  position: absolute;
+  width: 98%;
+  height:5%;
+  background: #ffb729;
+  bottom: 0%;
+  padding: 1%;
+}
+
+#introbox p{
+  font-size: 1.5em;
+}
+
 
 /*--------------------------------slider---------------------------------*/
   #slider{

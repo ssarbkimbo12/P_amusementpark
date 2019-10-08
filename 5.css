@@ -76,6 +76,45 @@ footer{
   position: absolute;
 }
 
+.footernumbers{
+  position:absolute;
+  width: 3.3%;
+  top:20%;
+  height:17%;
+  background: rgb(0,57,255);
+  border-radius: 100%;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: white;
+  text-decoration: none;
+   transition: all 0.3s;
+}
+
+.footernumbers:hover{
+  border-radius: 0%;
+}
+
+
+#footernumber1{
+  right: 21%;
+}
+#footernumber2{
+  right: 17%;
+}
+#footernumber3{
+  right: 13%;
+}
+#footernumber4{
+  right: 9%;
+}
+#footernumber5{
+  right: 5%;
+}
+#footernumber6{
+  right: 1%;
+}
+
 #wrapp{
   width:100%; 
   height: 100vh; 
@@ -258,7 +297,7 @@ footer{
 
   #rightbtn{width:10%; position: absolute; right: 0%; top:45%;}
 
-  #menubox{ 
+   #menubox{ 
     position: fixed;
     z-index:9999; 
     width: 200px; 
@@ -286,6 +325,7 @@ footer{
     }
 
 
+
    #up{ 
      z-index: 9999;
      width:75%; 
@@ -310,7 +350,6 @@ footer{
     }
 
     #dropdowncontent a:hover {background-color: #ff5c77;cursor: url(cursorclick.png) 0 0 ,auto;}
-
 
 
 
