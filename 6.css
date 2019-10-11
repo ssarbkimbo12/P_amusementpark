@@ -226,18 +226,18 @@ footer{
 
   #line1{
     position: absolute;
-    width: 50%;
+    width: 43%;
     height: 1px;
-    top:40%;
+    top:41%;
     right: 0%;
     background: black;
   }
 
   #line2{
     position: absolute;
-    width: 55%;
+    width: 43%;
     height: 1px;
-    top:62%;
+    top:67%;
     right: 0%;
     background: black;
   }
@@ -288,6 +288,31 @@ footer{
 
 #introbox p{
   font-size: 1.5em;
+  line-height: 2em;
+}
+
+#title1{
+  position: absolute;
+  width:22%;
+  top:21%;
+  right:2%;
+}
+
+#title2{
+  position: absolute;
+  width:42%;
+  top:47%;
+  right:2%;
+}
+
+#popcornshadow{
+  position:absolute; 
+  width:29%; 
+  height:46%;
+  left:10%; 
+  top:29%;
+  border:dashed thin black;
+  border-radius: 50%;
 }
 
 
