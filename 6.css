@@ -214,10 +214,33 @@ footer{
   #container1{
     position: relative;
     width:100%;
-    height:100vh;
+    height:900px;
     float: left;
     background:white;
   }
+
+  .rotatecircle{
+    position: fixed;
+    width: 30%;
+    top:60%;
+    left:68%;
+    z-index: -1;
+    animation: rotatecircleani 50s infinite linear;
+    }
+@keyframes rotatecircleani{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+#rotate2{
+  top:53%;
+  left:1%;
+}
+
+#rotate3{
+  top:33%;
+  left:32%;
+}
 
   #popcorn img{
     position: absolute;
@@ -315,12 +338,746 @@ footer{
   border-radius: 50%;
 }
 
+/*--------------------------------container2---------------------------------*/
+  #container2{
+    position: relative;
+    width:100%;
+    height:900px;
+    float: left;
+  }
+
+  #text1box{
+    position: absolute;
+    border:solid black thin;
+    background: white;
+    width: 33%;
+    height: 50%;
+    top:20%;
+    border-radius: 100%;
+    left:16%;
+    transform: rotate(0deg);
+
+  }
+
+#text1box:hover{
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
+  #text1boxshadow{
+    position: absolute;
+    border:dashed black thin;
+    background: #d50000;
+    width: 33%;
+    height: 50%;
+    border-radius: 100%;
+    left:10%;
+    top:25%;
+  }
+
+
+
+  #text1{
+    position: absolute;
+    top:15%;
+    font-size:2.5em;
+    color: rgb(0,57,255);
+    -webkit-text-stroke:1px black;
+    text-align: center;
+  }
+
+  #text1-1{
+    position: absolute;
+    top:38%;
+    font-size:1.3em;
+    color: black;
+    text-align:center;
+    line-height: 1.5em;
+  }
+
+  #window1{
+  position: absolute;
+  margin:auto;
+  top:10%;
+  right:17%;
+  width:23%;
+  height:70%;
+  background: white;
+  border-style: solid;
+  border-radius: 12px;
+  border-width: thin;
+  border-color: black;
+  overflow: hidden;
+  animation:windowani 0.8s infinite ease-out;
+}
+
+
+
+  #p1{
+  width: 85%;
+  position: absolute;
+  font-size: 1em;
+  line-height: 1.5em;
+  top: 22%;
+  left:7%;
+}
+
+#line3{
+  position: absolute;
+  width:100%;
+  top:2%;
+}
+#x3{
+  position: absolute;
+  width:7%;
+  top:9px;
+  left:3%;
+}
+#mini1{
+  position: absolute;
+  width:8%;
+  top:9px;
+  left:15%;
+}
+
+#big1{
+  width:7.6%;
+  top:9px;
+  left:15%;
+  visibility: hidden;
+  position: absolute;
+}
+
+
+
+ #button1 {
+  position: absolute;
+  top:15%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button1 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+  #button1:hover{ background:#ff5c77;}
+
+
+#button2 {
+  position: absolute;
+  top:32%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button2 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+#button2:hover{ background:#ff5c77;}
+
+#button3 {
+  position: absolute;
+  top:50%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button3 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+#button3:hover{ background:#ff5c77;}
+
+#button4 {
+  position: absolute;
+  top:67%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button4 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+#button4:hover{ background:#ff5c77;}
+
+#button5 {
+  position: absolute;
+  top:84%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button5 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+#button5:hover{ background:#ff5c77;}
+
+  #x4{
+  position: absolute;
+  width:3%;
+  height:4.9%;
+  background: rgba(0,0,0,.3);
+  border-radius: 50%;
+  top:18%;
+  left: 15%;
+}
+
+#x4 img{
+  position: absolute;
+  width: 73%;
+  top:15%;
+  left:12%;
+}
+
+
+
+/*--------------------------------container3---------------------------------*/
+  #container3{
+    position: relative;
+    width:100%;
+    height:900px;
+    float: left;
+  }
+
+
+  #window2{
+  position: absolute;
+  margin:auto;
+  top:10%;
+  left:17%;
+  width:23%;
+  height:70%;
+  background: white;
+  border-style: solid;
+  border-radius: 12px;
+  border-width: thin;
+  border-color: black;
+  overflow: hidden;
+  animation:windowani 0.8s infinite ease-out;
+}
+
+
+  #window2shadow{
+  position: absolute;
+  margin:auto;
+  top:15%;
+  left:21%;
+  width:23%;
+  height:70%;
+  background: white;
+  border-style: dashed;
+  border-width: thin;
+  border-color: black;
+  overflow: hidden;
+  animation:windowani 0.8s infinite ease-out;
+}
+
+
+#x5{
+  position: absolute;
+  width:3%;
+  height:4.9%;
+  background: rgba(0,0,0,.3);
+  border-radius: 50%;
+  top:18%;
+  right: 15%;
+}
+
+#x5 img{
+  position: absolute;
+  width: 73%;
+  top:15%;
+  left:12%;
+}
+
+#text2box{
+    position: absolute;
+    border:solid black thin;
+    background: white;
+    width: 33%;
+    height: 50%;
+    border-radius: 100%;
+    top:20%;
+    right:16%;
+    transform: rotate(0deg);
+  }
+#text2box:hover{
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
+
+  #text2{
+    position: absolute;
+    top:15%;
+    font-size:2.5em;
+    text-align: center;
+    color: rgb(0,57,255);
+    -webkit-text-stroke:1px black;
+  }
+
+  #text2-1{
+    position: absolute;
+    top:38%;
+    font-size:1.3em;
+    color: black;
+    text-align:center;
+    line-height: 1.5em;
+  }
+
+#mini2{
+  position: absolute;
+  width:8%;
+  top:9px;
+  left:15%;
+}
+
+#big2{
+  width:7.6%;
+  top:9px;
+  left:15%;
+  visibility: hidden;
+  position: absolute;
+}
+
+
+#line4{
+  position: absolute;
+  width:100%;
+  top:2%;
+}
+
+#x6{
+  position: absolute;
+  width:7%;
+  top:9px;
+  left:3%;
+}
+
+#button21 {
+  position: absolute;
+  top:15%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button21 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+  #button21:hover{ background:#ff5c77;}
+
+
+#button22 {
+  position: absolute;
+  top:32%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button22 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+#button22:hover{ background:#ff5c77;}
+
+#button23 {
+  position: absolute;
+  top:50%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button23 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+#button23:hover{ background:#ff5c77;}
+
+#button24 {
+  position: absolute;
+  top:67%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button24 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+#button24:hover{ background:#ff5c77;}
+
+#button25 {
+  position: absolute;
+  top:84%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:10%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+#button25 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+#button25:hover{ background:#ff5c77;}
+
+/*--------------------------------container4---------------------------------*/
+  #container4{
+    position: relative;
+    width:100%;
+    height:900px;
+    float: left;
+  } 
+
+  #text41box{
+    position: absolute;
+    border:solid black thin;
+    background: white;
+    width: 33%;
+    height: 50%;
+    border-radius: 100%;
+    top:20%;
+    left:16%;
+    transform: rotate(0deg);
+    
+  }
+#text41box:hover{
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
+
+  #text41boxshadow{
+    position: absolute;
+    border:dashed black thin;
+    background: #d50000;
+    width: 33%;
+    height: 50%;
+    border-radius: 100%;
+    top:25%;
+    left:10%;
+
+  }
+
+  #text41{
+    position: absolute;
+    top:15%;
+    font-size:2.5em;
+    color: rgb(0,57,255);
+    -webkit-text-stroke:1px black;
+    text-align: center;
+  }
+
+  #text41-1{
+    position: absolute;
+    top:38%;
+    font-size:1.3em;
+    color: black;
+    text-align:center;
+    line-height: 1.5em;
+  }
+
+  #window41{
+  position: absolute;
+  margin:auto;
+  top:10%;
+  right:17%;
+  width:23%;
+  height:70%;
+  background: white;
+  border-style: solid;
+  border-radius: 12px;
+  border-width: thin;
+  border-color: black;
+  overflow: hidden;
+  animation:windowani 0.8s infinite ease-out;
+}
+
+
+
+  #p41{
+  width: 85%;
+  position: absolute;
+  font-size: 1em;
+  line-height: 1.5em;
+  top: 22%;
+  left:7%;
+}
+
+#line43{
+  position: absolute;
+  width:100%;
+  top:2%;
+}
+#x43{
+  position: absolute;
+  width:7%;
+  top:9px;
+  left:3%;
+}
+#mini41{
+  position: absolute;
+  width:8%;
+  top:9px;
+  left:15%;
+}
+
+#big41{
+  width:7.6%;
+  top:9px;
+  left:15%;
+  visibility: hidden;
+  position: absolute;
+}
+
+
+
+ #button41 {
+  position: absolute;
+  top:15%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button41 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+  #button41:hover{ background:#ff5c77;}
+
+
+#button42 {
+  position: absolute;
+  top:32%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button42 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+#button42:hover{ background:#ff5c77;}
+
+#button43 {
+  position: absolute;
+  top:50%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button43 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+#button43:hover{ background:#ff5c77;}
+
+#button44 {
+  position: absolute;
+  top:67%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button44 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+#button44:hover{ background:#ff5c77;}
+
+#button45 {
+  position: absolute;
+  top:84%;
+  left:12%;
+  background-color:white;
+  border:solid thin black;
+  text-decoration: none;
+  color:white;
+  width: 75%;
+  height:9%;
+  border-radius:100%;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.2em;
+}
+
+#button45 a{
+  color: white;
+  -webkit-text-stroke:1px black;
+}
+
+#button45:hover{ background:#ff5c77;}
+
+  #x44{
+  position: absolute;
+  width:3%;
+  height:4.9%;
+  background: rgba(0,0,0,.3);
+  border-radius: 50%;
+  top:18%;
+  left: 15%;
+}
+
+#x44 img{
+  position: absolute;
+  width: 73%;
+  top:15%;
+  left:12%;
+}
+
+
+
+
+
 
 /*--------------------------------slider---------------------------------*/
   #slider{
     position: relative;
     max-width:100%;
-    height: 100vh;
+    height:900px;
     float:left;
     overflow-x:hidden;
     background: white;
@@ -570,6 +1327,12 @@ footer{
 header{
     height: 180px;
     }
+
+  #container1{height: 1080px;}
+  #container2{height: 1080px;}
+  #container3{height: 1080px;}
+  #container4{height: 1080px;}
+  #slider{height: 1080px;}
 
   #up{ 
     z-index: 9999;

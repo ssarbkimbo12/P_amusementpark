@@ -215,7 +215,7 @@ footer{
   #container1{
     position: relative;
     width:100%;
-    height:100vh;
+    height:900px;
     float: left;
     background:white;
   }
@@ -560,7 +560,7 @@ footer{
   #container2{
     position: relative;
     width:100%;
-    height:100vh;
+    height:900px;
     float: left;
     overflow:hidden;
   }
@@ -815,7 +815,7 @@ footer{
   #container3{
     position: relative;
     width:100%;
-    height:100vh;
+    height:900px;
     float: left;
     overflow:hidden;
   }
@@ -1174,7 +1174,7 @@ footer{
   #container4{
     position: relative;
     width:100%;
-    height:100vh;
+    height:900px;
     float: left;
     overflow:hidden;
   }
@@ -1266,7 +1266,7 @@ footer{
   #slider{
     position: relative;
     max-width:100%;
-    height: 100vh;
+    height:900px;
     float:left;
     overflow-x:hidden;
     background: white;
@@ -1516,6 +1516,28 @@ footer{
 header{
     height: 180px;
     }
+
+  #container1{
+    height:1080px;
+  }
+
+  #container2{
+    height:1080px;
+  }
+
+  #container3{
+    height:1080px;
+  }
+
+  #container4{
+    height:1080px;
+  }
+
+   #slider{
+    height:1080px;
+  }
+
+
 
   #up{ 
     z-index: 9999;
