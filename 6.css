@@ -1444,9 +1444,6 @@ header{
     font-size: 2em;
   }
 
-.slidertext{
-    font-size: 1.5em;
-  }
 
 #footerfilename{
   font-size: 130%;
@@ -1455,6 +1452,170 @@ header{
 #footerline{
   top:6%;
 }
+
+#popcorn{ 
+  height:50%;
+}
+
+#popcornshadow{
+  height:50%;
+}
+
+  #line1{
+    width: 42%;
+    top:44%;
+  }
+
+  #line2{
+    top:69%;
+  }
+
+  #text1box{
+    width: 32%;
+    height: 54%;
+  }
+  #text1boxshadow{
+    width: 32%;
+    height: 54%;
+  }
+  #text2box{
+    width: 32%;
+    height: 54%;
+  }
+  #text41box{
+    width: 32%;
+    height: 54%;
+  }
+  #text41boxshadow{
+    width: 32%;
+    height: 54%;
+  }
+
+
+#x2 img{
+  width: 72%;
+  left:13%;
+}
+
+
+#x4{
+  position: absolute;
+  width:3%;
+  height:5.2%;
+  background: rgba(0,0,0,.3);
+  border-radius: 50%;
+  top:18%;
+  left: 15%;
+}
+
+#x4 img{
+  width: 72%;
+  left:13%;
+}
+
+.rotatecircle{
+  top:57%;
+}
+
+
+  #text1{
+    font-size:3em;
+  }
+
+  #text1-1{
+    font-size:1.6em;
+  }
+
+
+  #text2{
+    font-size:3em;
+  }
+
+  #text2-1{
+    font-size:1.6em;
+  }
+
+
+  #text41{
+    font-size:3em;
+  }
+
+  #text41-1{
+    font-size:1.6em;
+  }
+
+#button1 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+
+#button2 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+#button3 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+#button4 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+#button5 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+
+#button21 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+
+#button22 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+#button23 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+#button24 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+#button25 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+#button41 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+
+#button42 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+#button43 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+#button44 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+#button45 {
+  font-size: 1.5em;
+  line-height: 2.5em;
+}
+
+
+
+#window2shadow{
+  top:17%;
+}
+
+
 
 }/*--반응형닫힘--*/
 
