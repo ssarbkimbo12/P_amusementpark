@@ -425,7 +425,7 @@ footer{
     width: 30%;
     height:8%;
     top:20%;
-    left: 3%;
+    left:3%;
   }
 
   .contenttitlebox p {
@@ -934,9 +934,92 @@ header{
     height:1080px;
   }
 
+  #container3{
+    height:1080px;
+  }
+
+  #container4{
+    height:1080px;
+  }
+
+  #container5{
+    height:1080px;
+  }
+
+  #container6{
+    height:1080px;
+  }
+
+  #container7{
+    height:1080px;
+  }
+
+  #container8{
+    height:1080px;
+  }
+
+  #container9{
+    height:1080px;
+  }
+
+  #container10{
+    height:1080px;
+  }
+
+  #container11{
+    height:1080px;
+  }
 
   #slider{
     height:1080px;
+  }
+
+  #gyro{
+    top: 4%;
+    width: 18%;
+  }
+
+  #bigcircle{
+    top:16%;    
+    width: 33%;
+    height: 58%;
+  }
+
+  #questioncloud{
+    width:1055px;
+  }
+
+  .buttons{
+  right:20%;
+}
+
+#filename1{
+  font-size: 120%;
+}
+
+
+  #p1{
+    font-size: 1.6em;
+  }
+
+  .contenttitlebox p {
+    font-size:2.3em;
+  }
+
+  .numbers{
+    width: 9.5%;
+    font-size: 1.8em;
+    line-height: 1.8em;
+  }
+
+  .leftbtns{top:50%; }
+
+  .rightbtns{top:50%; }
+
+
+  .reviews{
+    width:42%;
+    font-size:1.1em;
   }
 
 }/*--반응형닫힘--*/

@@ -339,7 +339,7 @@
 
   <img src="./4-3/background.gif" style="width: 130%; position: absolute; top:-15%;">
       <video controls class="cursorclick" id="thumbnail3" poster="./4-3/thumbnail.jpg">
-        <source src="./4-3/thumbnail.jpg" type="video/mp4">
+        <source src="./4-3/3.mp4" type="video/mp4">
       </video>
       <img src="./4/playbtn.png" id="playbtn3">
   <h1 id="text3">Red colod river<br><span class="kor700" style="font-size:0.2em; position: absolute; width:96%;background:white; text-align: left; right:0%; padding:2%;">(:붉은 강)</span></h1>
@@ -607,6 +607,8 @@
     var percent = p.toFixed(1);
     var p2 = (t/k) * 100;
     var percent = p2.toFixed(1);
+    var p3 = (t/k) * 100;
+    var percent = p3.toFixed(1);
 
     monitor.innerHTML = percent + "%";
 
@@ -697,7 +699,49 @@
       movie2pic15.style.right="6%";
     }else{
       container.style.background = "purple";
+    }    if(p3 < 12.1){
+      movie3pic1.style.left="-70%";
+    }else if(p3 < 25){
+      movie3pic1.style.left="17%";
+      movie3pic3.style.left="-55%";
+      movie3pic3shadow.style.left="-55%";
+    }else if(p3 < 36.6){
+      movie3pic3.style.left="7%";
+      movie3pic3shadow.style.left="9%";
+      movie3pic4.style.left="-25%";
+      movie3pic5.style.left="-35%";
+      movie3pic6.style.right="-25%";
+      movie3pic6shadow.style.right="-20%";
+  
+    }else if(p3 < 44.5){
+      movie3pic4.style.left="3%";
+      movie3pic5.style.left="22%";
+      movie3pic6.style.right="3%";
+      movie3pic6shadow.style.right="5%";
+      movie3pic7.style.left="-55%";
+    }else if(p3 < 46){
+      movie3pic7.style.left="10%";
+    }else if(p3 < 52.7){
+      movie3pic8.style.left="-80%";
+      movie3pic9.style.right="-55%";
+    }else if(p3 < 66.7){
+      movie3pic8.style.left="0%";
+      movie3pic9.style.right="0%";
+      movie3pic11.style.left="-95%";
+    }else if(p3 < 68.9){
+       movie3pic11.style.left="0%";
+    }else if(p3 < 79){
+      movie2pic12.style.left="10%";
+      movie2pic13.style.right="6%";
+      movie2pic14.style.left="-70%";
+      movie2pic15.style.right="-40%";
+    }else if(p3 < 91.5){
+      movie2pic14.style.left="2%";
+      movie2pic15.style.right="6%";
+    }else{
+      container.style.background = "purple";
     }
+
   }
   //자동스크롤
   var s = 0;
@@ -795,8 +839,21 @@
       container19.style.height="0vh";
       container20.style.height="0vh";
       container21.style.height="0vh";
-      thumbnail2.paused();
+      container22.style.height="0vh";
+      container23.style.height="0vh";
+      container24.style.height="0vh";
+      container25.style.height="0vh";
+      container26.style.height="0vh";
+      container27.style.height="0vh";
+      container28.style.height="0vh";
+      container29.style.height="0vh";
+      container30.style.height="0vh";
+      container31.style.height="0vh";
+      container32.style.height="0vh";
+      thumbnail2.pause();
+      thumbnail3.pause();
     }
+
     slidertitle2.onclick=function(){
       container2.style.height="0vh";
       container3.style.height="0vh";
@@ -821,8 +878,21 @@
       container19.style.height="100vh";
       container20.style.height="100vh";
       container21.style.height="40vh";
+      container22.style.height="0vh";
+      container23.style.height="0vh";
+      container24.style.height="0vh";
+      container25.style.height="0vh";
+      container26.style.height="0vh";
+      container27.style.height="0vh";
+      container28.style.height="0vh";
+      container29.style.height="0vh";
+      container30.style.height="0vh";
+      container31.style.height="0vh";
+      container32.style.height="0vh";
       thumbnail.pause();
+      thumbnail3.pause();
     }
+
     slidertitle3.onclick=function(){
       container2.style.height="0vh";
       container3.style.height="0vh";
@@ -847,8 +917,21 @@
       container19.style.height="0vh";
       container20.style.height="0vh";
       container21.style.height="0vh";
+      container22.style.height="100vh";
+      container23.style.height="100vh";
+      container24.style.height="100vh";
+      container25.style.height="100vh";
+      container26.style.height="100vh";
+      container27.style.height="100vh";
+      container28.style.height="100vh";
+      container29.style.height="100vh";
+      container30.style.height="100vh";
+      container31.style.height="100vh";
+      container32.style.height="40vh";
       thumbnail.pause();
+      thumbnail2.pause();
     }
+
     slidertitle4.onclick=function(){
       container2.style.height="0vh";
       container3.style.height="0vh";
@@ -873,7 +956,20 @@
       container19.style.height="0vh";
       container20.style.height="0vh";
       container21.style.height="0vh";
+      container22.style.height="0vh";
+      container23.style.height="0vh";
+      container24.style.height="0vh";
+      container25.style.height="0vh";
+      container26.style.height="0vh";
+      container27.style.height="0vh";
+      container28.style.height="0vh";
+      container29.style.height="0vh";
+      container30.style.height="0vh";
+      container31.style.height="0vh";
+      container32.style.height="0vh";
       thumbnail.pause();
+      thumbnail2.pause();
+      thumbnail3.pause();
     }
 
 
@@ -935,6 +1031,11 @@
   thumbnail2.onmouseover=function(){
     thumbnail2.play();
     playbtn2.style.visibility="hidden";
+  }
+
+  thumbnail3.onmouseover=function(){
+    thumbnail3.play();
+    playbtn3.style.visibility="hidden";
   }
 </script>
 </html>
