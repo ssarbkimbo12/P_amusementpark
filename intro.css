@@ -16,11 +16,224 @@
   margin:0 auto;
 }
 
+#introfire1{
+  position: absolute;
+  width: 30%;
+  top:33%;
+  left: 8%;
+}
+
+
   #awning{
+    z-index: 9999;
     position: absolute;
-    width: 100%;
-    top: 0%;
+    width: 60%;
+    left: 20%;
+    top:0%;
   }
+
+  #introflowbox{
+    position: absolute;
+    left:0%;
+    width:5%;
+    height: 100%;
+    overflow: hidden;
+    animation: introflow 5s linear infinite; 
+  }
+  @keyframes introflow {
+    0%{
+      transform: translateY(0%);
+    }
+    100%{
+      transform: translateY(-20%);
+    }
+  
+  }
+
+  #introflowbox2{
+    position: absolute;
+    right:0%;
+    width:5%;
+    height: 100%;
+    overflow: hidden;
+    animation: introflow2 5s linear infinite; 
+  }
+
+  @keyframes introflow2 {
+    0%{
+      transform: translateY(-20%);
+    }
+    100%{
+      transform: translateY(0%);
+    }
+  
+  }
+
+  .introcircles{
+    position: absolute;
+    width: 97%;
+    height:6%;
+    border: dashed black thin;
+    background: white;
+    border-radius: 100%;
+  }
+
+  .introcircles2{
+    position: absolute;
+    width: 97%;
+    height:6%;
+    top:14%;
+    border: dashed black thin;
+    background: white;
+    border-radius: 100%;
+    animation: gradientani 2s infinite linear;
+  }
+
+  .introcircles21{
+    position: absolute;
+    width: 97%;
+    height:6%;
+    border: dashed black thin;
+    background: white;
+    border-radius: 100%;
+  }
+
+  .introcircles22{
+    position: absolute;
+    width: 97%;
+    height:6%;
+    top:14%;
+    border: dashed black thin;
+    background: white;
+    border-radius: 100%;
+    animation: gradientani 2s infinite linear;
+  }
+
+@keyframes gradientani {
+    0% {background-image: linear-gradient(to bottom right, white, white, #ff5c77);}
+    50%{background-image: linear-gradient(to bottom right, white,white, #ff5c77, white,white);}
+    100%{background-image: linear-gradient(to bottom right, #ff5c77, white,white);}
+  }
+
+  #introcircle1{
+    top:0%;
+  }
+  
+  #introcircle2{
+    top:6.7%;
+  }
+
+  #introcircle3{
+    top:13.4%;
+  }
+
+  #introcircle4{
+    top:calc(13.4% + 6.7%);
+  }
+
+  #introcircle5{
+    top:calc(13.4% + (6.7% *2));
+  }
+
+  #introcircle6{
+    top:calc(13.4% + (6.7% *3));
+  }
+
+  #introcircle7{
+    top:calc(13.4% + (6.7% *4));
+  }
+
+  #introcircle8{
+    top:calc(13.4% + (6.7% *5));
+  }
+
+  #introcircle9{
+    top:calc(13.4% + (6.7% *6));
+  }
+
+  #introcircle10{
+    top:calc(13.4% + (6.7% *7));
+  }
+
+  #introcircle11{
+    top:calc(13.4% + (6.7% *8));
+  }
+  #introcircle12{
+    top:calc(13.4% + (6.7% *9));
+  }
+  #introcircle13{
+    top:calc(13.4% + (6.7% *10));
+  }
+  #introcircle14{
+    top:calc(13.4% + (6.7% *11));
+  }
+  #introcircle15{
+    top:calc(13.4% + (6.7% *12));
+  }
+  #introcircle16{
+    top:calc(13.4% + (6.7% *13));
+  } 
+
+
+  #introcircle21{
+    top:0%;
+  }
+  
+  #introcircle22{
+    top:6.7%;
+  }
+
+  #introcircle23{
+    top:13.4%;
+  }
+
+  #introcircle24{
+    top:calc(13.4% + 6.7%);
+  }
+
+  #introcircle25{
+    top:calc(13.4% + (6.7% *2));
+  }
+
+  #introcircle26{
+    top:calc(13.4% + (6.7% *3));
+  }
+
+  #introcircle27{
+    top:calc(13.4% + (6.7% *4));
+  }
+
+  #introcircle28{
+    top:calc(13.4% + (6.7% *5));
+  }
+
+  #introcircle29{
+    top:calc(13.4% + (6.7% *6));
+  }
+
+  #introcircle210{
+    top:calc(13.4% + (6.7% *7));
+  }
+
+  #introcircle211{
+    top:calc(13.4% + (6.7% *8));
+  }
+  #introcircle212{
+    top:calc(13.4% + (6.7% *9));
+  }
+  #introcircle213{
+    top:calc(13.4% + (6.7% *10));
+  }
+  #introcircle214{
+    top:calc(13.4% + (6.7% *11));
+  }
+  #introcircle215{
+    top:calc(13.4% + (6.7% *12));
+  }
+  #introcircle216{
+    top:calc(13.4% + (6.7% *13));
+  } 
+
 
   #hint{
     position: absolute;
@@ -37,7 +250,7 @@
   }
 
   #menubox{ 
-    position: fixed;
+    position:fixed;
     z-index:9999; 
     width: 200px; 
     height: 50px; 
@@ -63,7 +276,7 @@
     }
 
     #dropdowncontent a {
-      color: #ffb729;
+      color: black;
       padding:11px 0px;
       text-decoration: none;
       display: block;
@@ -74,7 +287,8 @@
     }
 
     #dropdowncontent a:hover {
-      background-color: #ff5c77;
+      background-color: rgb(0,57,255);
+      color: white;
       cursor: url(cursorclick.png) 0 0 ,auto;
     }
 
@@ -139,21 +353,21 @@
     width:750px; 
     height:600px; 
     left:calc(50% - 375px); 
-    top:30%; 
+    top:31%; 
     overflow: 
     hidden;
   }
     
     #mouth{
       position: absolute; 
-      top:-2px; 
+      top:-1px; 
       width: 700px; 
       left:calc(50% - 350px);
     }
     
     #mouth_up{
       position: absolute; 
-      top:-2px;
+      top:-1px;
       width: 700px; 
       left:calc(50% - 350px);
     }
@@ -162,7 +376,7 @@
       position: absolute; 
       top: -80%; 
       width: 600px; 
-      left: calc(50% - 285px); 
+      left: calc(50% - 300px); 
       animation:mymove1 1s ease-out infinite; 
       transition:all 1s;
     }
@@ -252,6 +466,7 @@
   max-width:1440px; 
   height:90vh; 
   margin: auto;
+  background: white;
 }
 
   #groundbox{position:relative; right:-8%; bottom:8%; width:98%; height: 800px;}
@@ -621,25 +836,25 @@
 
   #ticketbox{
   position:absolute; 
-  width:1000px; 
+  width:1500px; 
   height:600px; 
-  left:calc(50% - 510px); 
-  top:33%; 
+  left:calc(50% - 750px); 
+  top:37%; 
   overflow: hidden;
 }
 
   #mouth{
       position: absolute; 
       top:-2px; 
-      width: 900px; 
-      left:calc(50% - 450px);
+      width: 940px; 
+      left:calc(50% - 470px);
     }
     
   #mouth_up{
       position: absolute; 
       top:-2px;
-      width: 900px; 
-      left:calc(50% - 450px);
+      width: 940px; 
+      left:calc(50% - 470px);
     }
 
   #titlebox{
@@ -733,7 +948,8 @@
   }
 
   #ticket{
-    width: 630px; 
+    width: 640px; 
+    left: calc(50% - 320px);
   }
 
   #arrow1{
@@ -901,13 +1117,13 @@
 }
 
  #textbox{
-  right: 31%; 
-  top: 56%; 
+  right: 27%; 
+  top: 60%; 
   }
 
  #textbox2{
-  right: 28%; 
-  top: 61.5%; 
+  right: 24%; 
+  top: 65.5%; 
   }
 
 
@@ -924,6 +1140,192 @@
     right:34%; 
     bottom:11%;
   }
+
+    #awning{
+    position: absolute;
+  
+    top: -2%;
+  }
+
+  .introcircles{
+    width: 95%;
+    height:9.5%;
+  }
+
+  .introcircles2{
+    width: 95%;
+    height:9.5%;
+  }
+
+  .introcircles21{
+    width: 95%;
+    height:9.5%;
+  }
+
+  .introcircles22{
+    width: 95%;
+    height:9.5%;
+  }
+
+  #introflowbox{
+    width:6.5%;
+    height: 110%;
+    animation: introflow 4s linear infinite; 
+  }
+
+  @keyframes introflow {
+    0%{
+      transform: translateY(0%);
+    }
+    100%{
+      transform: translateY(-10%);
+    }
+  
+  }
+
+
+  #introflowbox2{
+    width:6.5%;
+    height: 110%;
+    animation: introflow2 4s linear infinite; 
+  }
+
+  @keyframes introflow2 {
+    0%{
+      transform: translateY(-10%);
+    }
+    100%{
+      transform: translateY(0%);
+    }
+  
+  }
+
+
+
+  #introcircle1{
+    top:0%;
+  }
+  
+  #introcircle2{
+    top:10.4%;
+  }
+
+  #introcircle3{
+    top:20.5%;
+  }
+
+  #introcircle4{
+    top:calc(20.4% + 10.4%);
+  }
+
+  #introcircle5{
+    top:calc(20.4% + (10.4% *2));
+  }
+
+  #introcircle6{
+    top:calc(20.4% + (10.4% *3));
+  }
+
+  #introcircle7{
+    top:calc(20.4% + (10.4% *4));
+  }
+
+  #introcircle8{
+    top:calc(20.4% + (10.4% *5));
+  }
+
+  #introcircle9{
+    top:calc(20.4% + (10.4% *6));
+  }
+
+  #introcircle10{
+    top:calc(20.4% + (10.4% *7));
+  }
+
+  #introcircle11{
+    top:calc(20.4% + (10.4% *8));
+  }
+  #introcircle12{
+    top:calc(20.4% + (10.4% *9));
+  }
+  #introcircle13{
+    top:calc(20.4% + (10.4% *10));
+  }
+  #introcircle14{
+    top:calc(20.4% + (10.4% *11));
+  }
+  #introcircle15{
+    top:calc(20.4% + (10.4% *12));
+  }
+  #introcircle16{
+    top:calc(20.4% + (10.4% *13));
+  } 
+
+
+  #introcircle21{
+    top:0%;
+  }
+  
+  #introcircle22{
+    top:10.4%;
+  }
+
+  #introcircle23{
+    top:20.5%;
+  }
+
+  #introcircle24{
+    top:calc(20.4% + 10.4%);
+  }
+
+  #introcircle25{
+    top:calc(20.4% + (10.4% *2));
+  }
+
+  #introcircle26{
+    top:calc(20.4% + (10.4% *3));
+  }
+
+  #introcircle27{
+    top:calc(20.4% + (10.4% *4));
+  }
+
+  #introcircle28{
+    top:calc(20.4% + (10.4% *5));
+  }
+
+  #introcircle29{
+    top:calc(20.4% + (10.4% *6));
+  }
+
+  #introcircle210{
+    top:calc(20.4% + (10.4% *7));
+  }
+
+  #introcircle211{
+    top:calc(20.4% + (10.4% *8));
+  }
+  #introcircle212{
+    top:calc(20.4% + (10.4% *9));
+  }
+  #introcircle213{
+    top:calc(20.4% + (10.4% *10));
+  }
+  #introcircle214{
+    top:calc(20.4% + (10.4% *11));
+  }
+  #introcircle215{
+    top:calc(20.4% + (10.4% *12));
+  }
+  #introcircle216{
+    top:calc(20.4% + (10.4% *13));
+  } 
+
+      #dropdowncontent{
+       top: 44px;
+       padding: 7px;
+    }
+
 }
 
 

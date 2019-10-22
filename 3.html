@@ -263,7 +263,7 @@
   <a class="nature slidecontent" href="./1.html">
     <img class="slidecontentimg cursorclick"src="./map/1.gif" style="width:55%; left:22%; bottom:-4%;">
     <div class="eng700 slidenumber cursorclick">1</div>
-    <p class="kor400 slidertext cursorclick""><span class="kor500" style="font-size: 1.1em;">월경 티켓부스</span><br>초경 맞이 랜드에 온 걸 환영해!<br>월경이 발생하는 과정을 알아보자.</p>
+    <p class="kor400 slidertext cursorclick""><span class="kor500" style="font-size: 1.1em;">월경티켓부스</span><br>초경 맞이 랜드에 온 걸 환영해!<br>월경이 발생하는 과정을 알아보자.</p>
   </a>
 
   <a class="nature slidecontent" href="./2.html">
@@ -275,18 +275,18 @@
   <a class="nature slidecontent" href="./4.html">
     <img class="slidecontentimg cursorclick"src="./map/4.gif" style="width:71%; left:14%; bottom:0%;">
     <div class="eng700 slidenumber cursorclick">4</div>
-    <p class="kor400 slidertext cursorclick""><span class="kor500" style="font-size: 1.1em;">패션후르츠 스윙</span><br>월경 기간을 지혜롭고 편안하게 보낼 수 있는 패션팁을 알려줄게!</p>
+    <p class="kor400 slidertext cursorclick""><span class="kor500" style="font-size: 1.1em;">패션후르츠스윙</span><br>월경 기간을 지혜롭고 편안하게 보낼 수 있는 패션팁을 알려줄게!</p>
   </a>
   <a class="nature slidecontent" href="./5.html">
     <img class="slidecontentimg cursorclick"src="./map/5.gif" style="width:13%; left:44%; bottom:-2%;">
     <div class="eng700 slidenumber cursorclick">5</div>
-    <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>    
+    <p class="kor400 slidertext cursorclick"><span class="kor500" style="font-size: 1.1em;">자유로월경드롭</span><br>사용할 수 있는 월경용품이 생리대 뿐이라고 생각하는건 아니겠지? 취향에 맞는 용품을 찾아보자!</p>    
   </a>
 
   <a class="nature slidecontent" href="./6.html">
     <img class="slidecontentimg cursorclick"src="./map/6.gif" style="width:100%; left:0%; bottom:0%;">
     <div class="eng700 slidenumber cursorclick">6</div>
-    <p class="kor400 slidertext cursorclick"">이러한 페이지야블라블라블라블라ㅇㄹㄴㄹㅇㄹㄴㅇㄹㄴㅇㅁㄹㄴㅇㅁㄹㄴㅇㄹㄴㄹ</p>    
+    <p class="kor400 slidertext cursorclick"><span class="kor500" style="font-size: 1.1em;">월경팝콘머신</span><br>월경 주기는 팝콘처럼 어디로 튈지 모르지. 그럴 때 보면 좋을 유튜브 영상과 영화 그리고 책들을 소개시켜줄게!</p>    
   </a>
   <!--a class="nature slidecontent" href="./7.html">
     <img class="slidecontentimg cursorclick"src="./map/7.gif" style="width:90%; left:5%; bottom:0%;">
@@ -308,10 +308,25 @@
   <svg id="footerline">
    <line x1="0" y1="25%" x2="100%" y2="25%" style="stroke:black;stroke-width:1" />
   </svg>
+
+   <p class="eng700" id="footertext">
+Project Planning / Photograph_ <span class="eng400">Minseo Kim / Bokyung Kim</span> <br>
+Web / Concept Designer_ <span class="eng400">Bokyung Kim <a class="eng400 cursorclick"href="https://www.instagram.com/alwaysstaringatu/" style="color: black; text-decoration: none;font-size: 0.8em;">@alwaysstaringatu<a></span><br>
+Flim  Director / Fashion Editor _ <span class="eng400">Minseo Kim <a class="eng400 cursorclick" href="https://www.instagram.com/min_estherr/" style="color: black; text-decoration: none;font-size: 0.8em;">@min_estherr</a></span> <br>
+  </p>
+
+  <p class="eng400" id="footertext1">
+ https://ssarbkimbo12.github.io/P_amusementpark/
+  </p>
+
+  <p class="eng700" id="footertext2">
+   2019.11.01~03 HKNU Design 23th Graduation Exhibition
+  </p>
   <img class="cursorclick" id="footerx" src="./1/x.png">
   <img class="cursorclick" id="footerbig" src="./1/big.png">
   <img class="cursorclick" id="footermini" src="./1/mini.png">
   <p class="kor400" id="footerfilename"> footer.txt</p>
+  <a id="footernumber0"class="eng700 footernumbers cursorclick"href="./index.html">0</a>
   <a id="footernumber1"class="eng700 footernumbers cursorclick"href="./1.html">1</a>
   <a id="footernumber2"class="eng700 footernumbers cursorclick"href="./2.html">2</a>
   <a id="footernumber3"class="eng700 footernumbers cursorclick"href="./3.html">3</a>
@@ -411,17 +426,37 @@
   function goBack() { window.history.back() }
   function goBack2() { window.history.forward() }
 
-    footerx.onclick=function(){
+ footerx.onclick=function(){
       footerwindow.style.visibility="hidden";
       footerline.style.visibility="hidden";
       footermini.style.visibility="hidden";
       footerbig.style.visibility="hidden";
+      footertext.style.visibility="hidden";
+      footertext1.style.visibility="hidden";
+      footertext2.style.visibility="hidden";
+      footernumber0.style.visibility="hidden";
+      footernumber1.style.visibility="hidden";
+      footernumber2.style.visibility="hidden";
+      footernumber3.style.visibility="hidden";
+      footernumber4.style.visibility="hidden";
+      footernumber5.style.visibility="hidden";
+      footernumber6.style.visibility="hidden";
     }
     footermini.onclick=function(){
       footerwindow.style.height="13%"
       footerbig.style.visibility="visible";
       footermini.style.visibility="hidden";
       footerline.style.visibility="hidden";
+      footertext.style.visibility="hidden";
+      footertext1.style.visibility="hidden";
+      footertext2.style.visibility="hidden";
+      footernumber0.style.visibility="hidden";
+      footernumber1.style.visibility="hidden";
+      footernumber2.style.visibility="hidden";
+      footernumber3.style.visibility="hidden";
+      footernumber4.style.visibility="hidden";
+      footernumber5.style.visibility="hidden";
+      footernumber6.style.visibility="hidden";
     }
 
     footerbig.onclick=function(){
@@ -429,6 +464,16 @@
       footermini.style.visibility="visible";
       footerwindow.style.height="30vh";
       footerline.style.visibility="visible";
+      footertext.style.visibility="visible";
+      footertext1.style.visibility="visible";
+      footertext2.style.visibility="visible";
+      footernumber0.style.visibility="visible";
+      footernumber1.style.visibility="visible";
+      footernumber2.style.visibility="visible";
+      footernumber3.style.visibility="visible";
+      footernumber4.style.visibility="visible";
+      footernumber5.style.visibility="visible";
+      footernumber6.style.visibility="visible";
     }
 
 /*-------------------container1------------------------*/

@@ -94,7 +94,9 @@ footer{
 .footernumbers:hover{
   border-radius: 0%;
 }
-
+#footernumber0{
+  right: 25%;
+}
 
 #footernumber1{
   right: 21%;
@@ -113,6 +115,33 @@ footer{
 }
 #footernumber6{
   right: 1%;
+}
+
+#footertext{
+  position: absolute;
+  top:22%;
+  left:2%;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.6em;
+}
+
+#footertext1{
+  position: absolute;
+  top:67%;
+  left:2%;
+  font-size: 0.9em;
+  text-align: left;
+  line-height: 1.6em;
+}
+
+#footertext2{
+  position: absolute;
+  bottom:4%;
+  left:2%;
+  font-size: 1.3em;
+  text-align: left;
+  line-height: 1.6em;
 }
 
 #wrapp{
@@ -668,9 +697,8 @@ footer{
      top:5.5%;
   }
 
-
     #dropdowncontent a {
-      color: #ffb729;
+      color: black;
       padding:11px 0px;
       text-decoration: none;
       display: block;
@@ -680,9 +708,11 @@ footer{
       line-height: 1.3em;
     }
 
-    #dropdowncontent a:hover {background-color: #ff5c77;cursor: url(cursorclick.png) 0 0 ,auto;}
-
-
+    #dropdowncontent a:hover {
+      background-color: rgb(0,57,255);
+      color: white;
+      cursor: url(cursorclick.png) 0 0 ,auto;
+    }
 
   #menucircle{
     position: absolute; 
@@ -1021,7 +1051,18 @@ header{
     width:42%;
     font-size:1.1em;
   }
+      #dropdowncontent{
+       top: 44px;
+       padding: 7px;
+    }
+    #footerwindow{
+  top:20%;
+  height:31vh;
+}
 
+#footertext{
+  top:27%;
+}
 }/*--반응형닫힘--*/
 
 
