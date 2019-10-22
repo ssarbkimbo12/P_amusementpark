@@ -88,8 +88,8 @@
   <img class="cursorclick" id="big1" src="./1/big.png">
   <p class="kor400" id="filename1"> 초경열차를 타는 법.txt</p>
 
-  <div class="jumbotron cursorclick" role="button" onclick="randomImage()">
-    <a class="btn btn-default btn-lg  kor700 cursorclick">열차 받기</a>
+  <div class="jumbotron cursorclick" role="button" id="window1btn" onclick="randomImage()">
+    <a id="window1btn2" class="btn btn-default btn-lg  kor700 cursorclick">열차 받기</a>
 </div>
 </div><!--window1닫힘-->
 
@@ -260,17 +260,6 @@
 <div id="slider">
 <div id="sliderbox">
 
-  <a class="nature slidecontent" href="./1.html">
-    <img class="slidecontentimg cursorclick"src="./map/1.gif" style="width:55%; left:22%; bottom:-4%;">
-    <div class="eng700 slidenumber cursorclick">1</div>
-    <p class="kor400 slidertext cursorclick""><span class="kor500" style="font-size: 1.1em;">월경티켓부스</span><br>초경 맞이 랜드에 온 걸 환영해!<br>월경이 발생하는 과정을 알아보자.</p>
-  </a>
-
-  <a class="nature slidecontent" href="./2.html">
-    <img class="slidecontentimg cursorclick"src="./map/2.gif" style="width:100%; left:0%; bottom:-4%;">
-    <div class="eng700 slidenumber cursorclick">2</div>
-    <p class="kor400 slidertext cursorclick""><span class="kor500" style="font-size: 1.1em;">월경-고-라운드</span><br>회전목마처럼 돌고 돌아오는 월경주기때문에 머리가 아프다면 들어와봐!</p>
-  </a>
 
   <a class="nature slidecontent" href="./4.html">
     <img class="slidecontentimg cursorclick"src="./map/4.gif" style="width:71%; left:14%; bottom:0%;">
@@ -287,6 +276,18 @@
     <img class="slidecontentimg cursorclick"src="./map/6.gif" style="width:100%; left:0%; bottom:0%;">
     <div class="eng700 slidenumber cursorclick">6</div>
     <p class="kor400 slidertext cursorclick"><span class="kor500" style="font-size: 1.1em;">월경팝콘머신</span><br>월경 주기는 팝콘처럼 어디로 튈지 모르지. 그럴 때 보면 좋을 유튜브 영상과 영화 그리고 책들을 소개시켜줄게!</p>    
+  </a>
+
+    <a class="nature slidecontent" href="./1.html">
+    <img class="slidecontentimg cursorclick"src="./map/1.gif" style="width:55%; left:22%; bottom:-4%;">
+    <div class="eng700 slidenumber cursorclick">1</div>
+    <p class="kor400 slidertext cursorclick""><span class="kor500" style="font-size: 1.1em;">월경티켓부스</span><br>초경 맞이 랜드에 온 걸 환영해!<br>월경이 발생하는 과정을 알아보자.</p>
+  </a>
+
+  <a class="nature slidecontent" href="./2.html">
+    <img class="slidecontentimg cursorclick"src="./map/2.gif" style="width:100%; left:0%; bottom:-4%;">
+    <div class="eng700 slidenumber cursorclick">2</div>
+    <p class="kor400 slidertext cursorclick""><span class="kor500" style="font-size: 1.1em;">월경-고-라운드</span><br>회전목마처럼 돌고 돌아오는 월경주기때문에 머리가 아프다면 들어와봐!</p>
   </a>
   <!--a class="nature slidecontent" href="./7.html">
     <img class="slidecontentimg cursorclick"src="./map/7.gif" style="width:90%; left:5%; bottom:0%;">
@@ -504,14 +505,18 @@ x2.onclick=function(){
       line1.style.visibility="hidden";
       mini1.style.visibility="hidden";
       big1.style.visibility="hidden";
-      p2.style.visibility="hidden";
+      p1.style.visibility="hidden";
+      window1btn.style.visibility="hidden";
+      window1btn2.style.visibility="hidden";
   }
 mini1.onclick=function(){
       window1.style.height="5%"
       big1.style.visibility="visible";
       mini1.style.visibility="hidden";
       line1.style.visibility="hidden";
-      p2.style.visibility="hidden";
+      p1.style.visibility="hidden";
+      window1btn.style.visibility="hidden";
+      window1btn2.style.visibility="hidden";
   }
 
 big1.onclick=function(){
@@ -519,7 +524,9 @@ big1.onclick=function(){
       mini1.style.visibility="visible";
       window1.style.height="35%";
       line1.style.visibility="visible";
-      p2.style.visibility="visible";
+      p1.style.visibility="visible";
+      window1btn.style.visibility="visible";
+      window1btn2.style.visibility="visible";
   }
 
 

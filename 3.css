@@ -120,7 +120,7 @@ footer{
 
 #footertext{
   position: absolute;
-  top:22%;
+  top:30%;
   left:2%;
   font-size: 1em;
   text-align: left;
@@ -129,7 +129,7 @@ footer{
 
 #footertext1{
   position: absolute;
-  top:67%;
+  top:70%;
   left:2%;
   font-size: 0.9em;
   text-align: left;
@@ -799,6 +799,7 @@ footer{
   height:45%;
 }
 
+
   .jumbotron {
   position: absolute;
   top:70%;
@@ -1226,7 +1227,7 @@ footer{
 
   #toolsboxx{
   position: absolute;
-  width:9%;
+  width:8.5%;
   height:9%;
   background: rgba(0,0,0,.3);
   border-radius: 50%;
@@ -1237,9 +1238,9 @@ footer{
 
   #toolsboxx img{
     position: absolute;
-    width:65%;
-    left: 16%;
-    top:14%;
+    width:63%;
+    left: 18%;
+    top:18%;
   }
 
   #tools img{
@@ -1268,7 +1269,7 @@ footer{
 
   #pillsboxx{
   position: absolute;
-  width:9%;
+  width:8.5%;
   height:9%;
   background: rgba(0,0,0,.3);
   border-radius: 50%;
@@ -1279,9 +1280,9 @@ footer{
 
   #pillsboxx img{
     position: absolute;
-    width:65%;
-    left:16%;
-    top:14%;
+    width:61%;
+    left:18%;
+    top:20%;
   }
 
   #pills img{
@@ -2004,8 +2005,40 @@ header{
 }
 
 #footertext{
-  top:27%;
+  top:33%;
 }
+
+  #toolsboxx{
+  position: absolute;
+  width:8.2%;
+  height:9%;
+  background: rgba(0,0,0,.3);
+  border-radius: 50%;
+  top:0%;
+  right:0%;
+  text-align: center;
+}
+
+  #pillsboxx{
+  position: absolute;
+  width:8.2%;
+  height:9%;
+  background: rgba(0,0,0,.3);
+  border-radius: 50%;
+  top:0%;
+  right:0%;
+  text-align: center;
+}
+
+
+  #x5{
+    width: 100%;
+    height: 15%;
+    background:white;
+    border:dashed thin black;
+  }
+
+
 }/*--반응형닫힘--*/
 
 

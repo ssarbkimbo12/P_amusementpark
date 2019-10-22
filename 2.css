@@ -124,7 +124,7 @@ footer{
 
 #footertext{
   position: absolute;
-  top:22%;
+  top:30%;
   left:2%;
   font-size: 1em;
   text-align: left;
@@ -133,7 +133,7 @@ footer{
 
 #footertext1{
   position: absolute;
-  top:67%;
+  top:70%;
   left:2%;
   font-size: 0.9em;
   text-align: left;
@@ -1841,7 +1841,7 @@ footer{
 }
 
 #footertext{
-  top:27%;
+  top:33%;
 }
 
 
