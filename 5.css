@@ -1060,6 +1060,10 @@ header{
   height:31vh;
 }
 
+  .footernumbers{
+  line-height: 2em;
+}
+
 #footertext{
   top:33%;
 }
