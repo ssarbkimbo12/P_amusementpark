@@ -1067,6 +1067,10 @@ header{
 #footertext{
   top:33%;
 }
+.footernumbers{
+  width: 3%;
+  height:17%;
+}
 }/*--반응형닫힘--*/
 
 

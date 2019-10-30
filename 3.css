@@ -2038,6 +2038,11 @@ header{
     border:dashed thin black;
   }
 
+  .footernumbers{
+  width: 3%;
+  height:17%;
+}
+
 
 }/*--반응형닫힘--*/
 
