@@ -1711,15 +1711,15 @@ footer{
     height:0px;
     float: left;
     overflow: hidden;
- }ㄴ
+ }
 
- #movie3pic7{
+ /*#movie3pic7{
   position:absolute;
   width:50%;
   left:10%;
   top:15%;
   transition: all 0.5s cubic-bezier(.15,.63,.15,1.03);
- }
+ }*/
 
   #movie3p5{
     position: absolute;
